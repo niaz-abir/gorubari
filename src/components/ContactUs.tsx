@@ -3,11 +3,13 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <section className="py-6 mt-14  dark:bg-gray-100 dark:text-gray-900">
+    <section className="py-6 mt-14  text-black">
       <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6">
-          <h1 className="text-4xl font-bold">Get in touch</h1>
-          <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
+          <h1 className="text-4xl font-bold text-black">Get in touch</h1>
+          <p className="pt-2 pb-4 text-black">
+            Fill in the form to start a conversation
+          </p>
           <div className="space-y-4">
             <p className="flex items-center">
               <svg

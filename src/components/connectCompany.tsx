@@ -82,7 +82,7 @@ export default function ConnectCompany() {
           <h1 className="text-3xl lg:text-5xl font-bold pb-8">
             Collaborating With Top Industry Experts!
           </h1>
-          <p className="text-gray-300">
+          <p className="text-black">
             Our agency is a nexus for premier partnerships, trusted by over a
             hundred leading brands to create impactful and innovative
             collaborations. Experience the synergy of creativity and strategy in

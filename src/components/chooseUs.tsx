@@ -70,7 +70,7 @@ const ChooseUs = () => {
   return (
     <section className="mt-16">
       <h1 className="font-bold text-center text-4xl">Why Choose us?</h1>
-      <p className=" pb-8 pt-2 text-gray-300 text-[18px] text-center">
+      <p className=" pb-8 pt-2 text-black text-[18px] text-center">
         We have lot of support form us .You can watch it and discuss with us.
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
@@ -81,9 +81,9 @@ const ChooseUs = () => {
             transition={{ duration: 0.7 }}
             viewport={{ once: true, amount: 0.3 }}
             key={choose?.id}
-            className="lg:w-96 m-6  p-6 rounded-md bg-[#1a2f45]/40   "
+            className="lg:w-96 m-6  p-6 rounded-md bg-[#e7dec7]/40   "
           >
-            <div className="backdrop-blur-xl p-4 rounded-sm   bg-[#1a2f45] ">
+            <div className="backdrop-blur-xl p-4 rounded-sm   bg-[#e7dec7] ">
               <motion.h1
                 variants={iconAndNameVariants}
                 className="text-3xl lg:text-4xl mt-4 mb-2   "

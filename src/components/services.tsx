@@ -66,7 +66,7 @@ const Services = () => {
     <section id="services">
       <div className="text-center mb-14 mt-14 p-4">
         <h1 className="font-bold text-center text-4xl">Our Services</h1>
-        <p className="text-[18px] text-gray-300">
+        <p className="text-[18px] text-black">
           From enhancing your digital presence to creating impactful designs, we
           provide <br />
           solutions that drive business growth.
@@ -76,7 +76,7 @@ const Services = () => {
         {allServices.map((service) => (
           <motion.div
             key={service.id}
-            className="bg-[#1a2f45] rounded-md p-4 lg:w-96 m-6"
+            className="bg-[#e7dec7] rounded-md p-4 lg:w-96 m-6"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -96,7 +96,7 @@ const Services = () => {
               }}
             >
               <motion.h1
-                className="font-bold flex bg-[#12202e] rounded-md gap-2 pb-2 pt-2 text-[20px] lg:text-[28px] items-center"
+                className="font-bold flex  rounded-md gap-2 pb-2 pt-2 text-[20px] lg:text-[28px] items-center"
                 variants={{
                   hidden: { opacity: 0, x: -50 },
                   visible: { opacity: 1, x: 0 },

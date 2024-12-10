@@ -21,13 +21,13 @@ const Footer = () => {
       viewport={{ once: true, amount: 0.3 }}
       className="mt-20 pb-6 shadow-2xl  border-t-2 border-[#204964] shadow-[#23131c]"
     >
-      <footer className="footer text-white p-10">
+      <footer className="footer text-black p-10">
         <div>
           <h1 className="text-[25px] font-bold">"Explore New Frontiers,</h1>
           <h1 className="text-[25px] font-bold">
             Let Your Business Soar High"
           </h1>
-          <button className="p-4 mt-4 pl-2  btn-outline border-none rounded-md text-[18px] text-white font-bold transition-all duration-300 bg-gradient-to-r from-[#c4672d] to-[#da5d10] ">
+          <button className="p-4 mt-4 pl-2  btn-outline border-none rounded-md text-[18px] text-black font-bold transition-all duration-300 bg-gradient-to-r from-[#c4672d] to-[#da5d10] ">
             <Link href="contact-us" className="pt-2">
               Let's Connect
             </Link>
@@ -35,15 +35,15 @@ const Footer = () => {
         </div>
 
         <nav className="font-semibold text-[16px]">
-          <h6 className="font-bold text-white text-[18px]">Services</h6>
-          <a className="link link-hover text-gray-300">Development</a>
-          <a className="link link-hover text-gray-300">Design</a>
-          <a className="link link-hover text-gray-300">Marketing</a>
-          <a className="link link-hover text-gray-300">Branding</a>
-          <a className="link link-hover text-gray-300">Advertisement</a>
+          <h6 className="font-bold text-black text-[18px]">Services</h6>
+          <a className="link link-hover text-black">Development</a>
+          <a className="link link-hover text-black">Design</a>
+          <a className="link link-hover text-black">Marketing</a>
+          <a className="link link-hover text-black">Branding</a>
+          <a className="link link-hover text-black">Advertisement</a>
         </nav>
-        <nav className="font-semibold text-[16px] text-gray-300">
-          <h6 className="font-bold text-white text-[18px]">Company</h6>
+        <nav className="font-semibold text-[16px] text-black">
+          <h6 className="font-bold text-black text-[18px]">Company</h6>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
           <a className="link link-hover">Jobs</a>

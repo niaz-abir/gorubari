@@ -45,7 +45,7 @@ const ContactUs = () => {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-4 lg:py-8">
         <div className="mb-4">
           <div className="mb-4 max-w-3xl text-center sm:text-center md:mx-auto ">
-            <h2 className="font-heading mb-4 font-bold tracking-tight text-white dark:text-white text-2xl lg:text-4xl">
+            <h2 className="font-heading mb-4 font-bold tracking-tight text-black dark:text-black text-2xl lg:text-4xl">
               Get in Touch
             </h2>
           </div>
@@ -53,7 +53,7 @@ const ContactUs = () => {
         <div className="flex items-stretch  justify-center">
           <div className="grid md:grid-cols-2 items-center mt-4 ">
             <div className="h-full p-4 lg:pr-6 mt-2 lg:mt-4 ">
-              <p className="mt-3 mb-12 text-lg text-white dark:text-slate-400">
+              <p className="mt-3 mb-12 text-lg text-black dark:text-slate-400">
                 We’d love to hear from you! Whether you have questions,
                 feedback, or need support, our team is here to help. Fill out
                 the form below, or reach out to us via phone or email. Your
@@ -80,13 +80,13 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-white dark:text-white">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-black dark:text-black">
                       Our Address
                     </h3>
-                    <p className="text-white dark:text-slate-400">
+                    <p className="text-black dark:text-slate-400">
                       1300 Elmwood Avenue,
                     </p>
-                    <p className="text-white dark:text-slate-400">
+                    <p className="text-black dark:text-slate-400">
                       Buffalo, NY 14222, USA
                     </p>
                   </div>
@@ -111,13 +111,13 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-white dark:text-white">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-black dark:text-black">
                       Contact
                     </h3>
-                    <p className="text-white dark:text-slate-400">
+                    <p className="text-black dark:text-slate-400">
                       Mobile: +880263627
                     </p>
-                    <p className="text-white dark:text-slate-400">
+                    <p className="text-black dark:text-slate-400">
                       Mail: graphitech.sales@gmail.com
                     </p>
                   </div>
@@ -141,10 +141,10 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-white dark:text-white">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-black dark:text-black">
                       Working hours
                     </h3>
-                    <p className="text-white dark:text-slate-400">
+                    <p className="text-black dark:text-slate-400">
                       Monday - Friday: 08:00 - 17:00
                     </p>
                   </div>
@@ -153,7 +153,7 @@ const ContactUs = () => {
             </div>
 
             <div>
-              <div className="text-white relative px-2 p-4 bg-[#17334e] rounded-md shadow-lg sm:rounded-3xl ">
+              <div className="text-black relative px-2 p-4 bg-[#17334e] rounded-md shadow-lg sm:rounded-3xl ">
                 <div className="text-center pb-4 -mt-4">
                   <h1 className="text-3xl font-bold pt-4">Contact Us!</h1>
 
@@ -165,7 +165,7 @@ const ContactUs = () => {
                   <form ref={form} onSubmit={handleSubmit(onSubmit)}>
                     <label className="form-control w-full max-w-xs">
                       <div className="label">
-                        <span className="text-white">Name:</span>
+                        <span className="text-black">Name:</span>
                       </div>
                       <input
                         type="text"
@@ -186,7 +186,7 @@ const ContactUs = () => {
 
                     <label className="form-control w-full max-w-xs">
                       <div className="label">
-                        <span className="text-white">Email:</span>
+                        <span className="text-black">Email:</span>
                       </div>
                       <input
                         required
@@ -207,7 +207,7 @@ const ContactUs = () => {
                     )}
                     <label className="form-control">
                       <div className="label">
-                        <span className="text-white ">Message:</span>
+                        <span className="text-black ">Message:</span>
                       </div>
                       <textarea
                         className={` textarea textarea-bordered h-24  bg-[#1a2f45] w-[350px]  lg:w-[450px] ${
@@ -226,7 +226,7 @@ const ContactUs = () => {
                     )}
 
                     <div className="mt-4 mb-4">
-                      <button className="w-[350px]  lg:w-[450px] h-14 btn-outline border-none duration-300 rounded-md text-[18px] text-white font-bold hover:bg-[#2a4f75] bg-[#1a2f45]">
+                      <button className="w-[350px]  lg:w-[450px] h-14 btn-outline border-none duration-300 rounded-md text-[18px] text-black font-bold hover:bg-[#2a4f75] bg-[#1a2f45]">
                         Submit
                       </button>
                     </div>
