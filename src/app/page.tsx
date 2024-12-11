@@ -1,12 +1,10 @@
 import Footer from "@/components/Footer";
 import ProductCap from "@/components/ProductCap";
+import Shirt from "@/components/Shirt";
+
 import Testimonial from "@/components/Testimonial";
-import TShirt from "@/components/Tshirt";
-
 import { Banner } from "@/components/banner";
-
 import ChooseUs from "@/components/chooseUs";
-
 import Services from "@/components/services";
 
 export default function Home() {
@@ -15,7 +13,7 @@ export default function Home() {
       <Banner />
       <Services />
       <ProductCap />
-      <TShirt />
+      <Shirt />
       <Testimonial />
       <ChooseUs />
       <Footer />

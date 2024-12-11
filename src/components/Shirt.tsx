@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { RiGraduationCapFill, RiWebhookLine } from "react-icons/ri";
+import { RiGraduationCapFill } from "react-icons/ri";
 import image1 from "../../public/images/tshirt (1).jpg";
 import image2 from "../../public/images/tshirt (2).jpg";
 import image3 from "../../public/images/tshirt (3).jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-const TShirt = () => {
+const Shirt = () => {
   const allTShirts = [
     {
       id: 2,
@@ -126,4 +126,4 @@ const TShirt = () => {
   );
 };
 
-export default TShirt;
+export default Shirt;
