@@ -19,15 +19,15 @@ const Footer = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
       viewport={{ once: true, amount: 0.3 }}
-      className="mt-20 pb-6 shadow-2xl  border-t-2 border-[#204964] shadow-[#23131c]"
+      className="mt-24 pb-6  bg-[#f3eddd] shadow-md shadow-[#b1aa9c] border-t-2 "
     >
       <footer className="footer text-black p-10">
         <div>
-          <h1 className="text-[25px] font-bold">"Explore New Frontiers,</h1>
+          <h1 className="text-[25px] font-bold">"Discover New Horizons,</h1>
           <h1 className="text-[25px] font-bold">
-            Let Your Business Soar High"
+            Empower Your Business to Thrive"
           </h1>
-          <button className="p-4 mt-4 pl-2  btn-outline border-none rounded-md text-[18px] text-black font-bold transition-all duration-300 bg-gradient-to-r from-[#c4672d] to-[#da5d10] ">
+          <button className="p-4 mt-4 pl-2 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] border-none rounded-md text-[18px] text-black font-bold transition-all duration-300  ">
             <Link href="contact-us" className="pt-2">
               Let's Connect
             </Link>
@@ -36,18 +36,15 @@ const Footer = () => {
 
         <nav className="font-semibold text-[16px]">
           <h6 className="font-bold text-black text-[18px]">Services</h6>
-          <a className="link link-hover text-black">Development</a>
-          <a className="link link-hover text-black">Design</a>
-          <a className="link link-hover text-black">Marketing</a>
-          <a className="link link-hover text-black">Branding</a>
-          <a className="link link-hover text-black">Advertisement</a>
+          <a className="link link-hover text-black">Caf</a>
+          <a className="link link-hover text-black">TShirt</a>
+          <a className="link link-hover text-black">Delivery</a>
+          <a className="link link-hover text-black">Discount</a>
         </nav>
         <nav className="font-semibold text-[16px] text-black">
           <h6 className="font-bold text-black text-[18px]">Company</h6>
           <a className="link link-hover">About us</a>
           <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
         </nav>
         <nav>
           <h6 className="font-semibold text-[16px]">Address</h6>

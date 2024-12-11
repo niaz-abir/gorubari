@@ -4,72 +4,49 @@ import { motion } from "framer-motion";
 import { FaPhotoVideo } from "react-icons/fa";
 import { GrAppsRounded } from "react-icons/gr";
 import { IoIosApps } from "react-icons/io";
-import { RiWebhookLine } from "react-icons/ri";
+import { RiPaintBrushLine, RiTShirt2Line, RiWebhookLine } from "react-icons/ri";
 import { TfiWrite } from "react-icons/tfi";
 import { VscGraph } from "react-icons/vsc";
+import { FiShoppingBag } from "react-icons/fi";
 
 const Services = () => {
   const allServices = [
     {
-      id: 2,
-      name: "Web Development",
-      no: "02",
-      icon: <RiWebhookLine />,
-      details:
-        "Build custom, responsive websites tailored to your business. From design to deployment, we create web solutions that drive success.",
-    },
-    {
-      id: 4,
-      name: "Graphic Design",
-      no: "04",
-      icon: <GrAppsRounded />,
-      details:
-        "Stunning visuals that capture attention and convey your message. From logos to marketing materials, we design for impact and clarity.",
-    },
-    {
-      id: 5,
-      name: "Digital Marketing",
-      no: "05",
-      icon: <TfiWrite />,
-      details:
-        "Boost your brand with targeted online strategies. From SEO to social media, we drive growth and enhance your digital presence.",
-    },
-    {
       id: 1,
-      name: "Video Editing",
+      name: "Custom Cap Design",
       no: "01",
-      icon: <FaPhotoVideo />,
+      icon: <RiPaintBrushLine />,
       details:
-        "Transform raw footage into polished videos with expert editing, tailored to your needs. Professional results, every time.",
+        "Create personalized caps that showcase your unique style. From trendy designs to brand logos, we bring your vision to life.",
     },
-
+    {
+      id: 2,
+      name: "T-Shirt Printing",
+      no: "02",
+      icon: <RiTShirt2Line />,
+      details:
+        "Get high-quality t-shirts printed with your custom designs. Perfect for personal use, events, or promoting your brand.",
+    },
     {
       id: 3,
-      name: "App Development",
+      name: "Bulk Apparel Orders",
       no: "03",
-      icon: <IoIosApps />,
+      icon: <FiShoppingBag />,
       details:
-        "Create custom, user-friendly apps that meet your business needs. From concept to launch, we build mobile solutions that engage and perform.",
-    },
-
-    {
-      id: 6,
-      name: "Brand Building",
-      no: "06",
-      icon: <VscGraph />,
-      details:
-        "Create a strong, memorable brand identity. We craft strategies and visuals that define your brand and connect with your audience effectively.",
+        "Order caps and t-shirts in bulk with competitive pricing. Ideal for businesses, teams, or special events.",
     },
   ];
 
   return (
     <section id="services">
       <div className="text-center mb-14 mt-14 p-4">
-        <h1 className="font-bold text-center text-4xl">Our Services</h1>
+        <h1 className="font-bold text-center text-4xl">
+          Discover Our Services
+        </h1>
         <p className="text-[18px] text-black">
-          From enhancing your digital presence to creating impactful designs, we
-          provide <br />
-          solutions that drive business growth.
+          From crafting unique apparel to delivering exceptional customer
+          experiences, <br /> we provide solutions that drive your clothing
+          business forward.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">

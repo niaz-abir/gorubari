@@ -30,7 +30,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div>
+    <div className="bg-[#f3eddd] shadow-md shadow-[#b1aa9c] max-w-7xl mx-auto rounded-sm">
       <nav className="mt-2">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <h1 className="flex gap-2 items-center text-2xl">
@@ -68,7 +68,7 @@ const Navbar = () => {
                   href="/#services"
                   className="block py-2 px-3 text-[20px] lg:w-full   w-36 text-black rounded md:border-0"
                 >
-                  Services
+                  TShirt
                 </a>
               </li>
               <li>
@@ -76,7 +76,7 @@ const Navbar = () => {
                   href="/#package"
                   className="block py-2 px-3 text-[20px] lg:w-full   w-36 text-black rounded md:border-0"
                 >
-                  Package
+                  Caf
                 </a>
               </li>
               <li>
