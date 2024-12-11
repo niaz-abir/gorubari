@@ -1,11 +1,10 @@
-import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
-import Pricing from "@/components/Pricing";
+import ProductCap from "@/components/ProductCap";
+import ProductTShirt from "@/components/ProductTshirt";
 import Testimonial from "@/components/Testimonial";
 import { Banner } from "@/components/banner";
 import ChooseUs from "@/components/chooseUs";
-import ConnectCompany from "@/components/connectCompany";
-import Portfolio from "@/components/portfolio";
+
 import Services from "@/components/services";
 
 export default function Home() {
@@ -13,10 +12,10 @@ export default function Home() {
     <section className="max-w-7xl mx-auto">
       <Banner />
       <Services />
+      <ProductCap />
+      <ProductTShirt />
       <Testimonial />
       <ChooseUs />
-      {/* <Portfolio /> */}
-      <ConnectCompany />
       <Footer />
     </section>
   );

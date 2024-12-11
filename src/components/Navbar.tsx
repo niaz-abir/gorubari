@@ -5,8 +5,6 @@ import { MdOutlinePermPhoneMsg } from "react-icons/md";
 import { FaMailchimp, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { AiOutlineMenuFold } from "react-icons/ai";
-import { SiMailchimp } from "react-icons/si";
-import { BiBeer } from "react-icons/bi";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -92,7 +90,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="tel:+1 716 406 7972"
-                  className="p-2 flex items-center gap-2 text-[20px] lg:w-full bg-gradient-to-r from-[#da7c41] to-[#da5d10]  w-56 text-black rounded md:border-0"
+                  className="p-2 flex items-center gap-2 text-[20px] lg:w-full bg-gradient-to-r from-[#da7c41] to-[#FD3B29]  w-56 text-black rounded md:border-0"
                 >
                   <MdOutlinePermPhoneMsg /> +1 716 406 7972
                 </a>
