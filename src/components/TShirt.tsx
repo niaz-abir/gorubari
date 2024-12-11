@@ -47,9 +47,9 @@ const TShirt = () => {
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        {allTShirts.map((tShirt) => (
+        {allTShirts?.map((tShirt) => (
           <motion.div
-            key={tShirt.id}
+            key={tShirt?.id}
             className="bg-[#e7dec7] rounded-md p-4 lg:w-96 m-6 relative"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
