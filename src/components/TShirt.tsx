@@ -8,7 +8,7 @@ import image3 from "../../public/images/tshirt (3).jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-const ProductTShirt = () => {
+const TShirt = () => {
   const allTShirts = [
     {
       id: 2,
@@ -126,4 +126,4 @@ const ProductTShirt = () => {
   );
 };
 
-export default ProductTShirt;
+export default TShirt;

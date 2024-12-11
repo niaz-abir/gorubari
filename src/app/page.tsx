@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import ProductCap from "@/components/ProductCap";
-import ProductTShirt from "@/components/ProductTshirt";
 import Testimonial from "@/components/Testimonial";
+import TShirt from "@/components/Tshirt";
 import { Banner } from "@/components/banner";
 import ChooseUs from "@/components/chooseUs";
 
@@ -13,7 +13,7 @@ export default function Home() {
       <Banner />
       <Services />
       <ProductCap />
-      <ProductTShirt />
+      <TShirt />
       <Testimonial />
       <ChooseUs />
       <Footer />
