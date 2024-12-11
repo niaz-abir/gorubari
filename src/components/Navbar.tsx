@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { GiBee, GiUbisoftSun } from "react-icons/gi";
+import { GiBee } from "react-icons/gi";
 import { MdOutlinePermPhoneMsg } from "react-icons/md";
-import { FaMailchimp, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { AiOutlineMenuFold } from "react-icons/ai";
 
