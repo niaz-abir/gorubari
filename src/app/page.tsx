@@ -10,7 +10,7 @@ import Services from "@/components/services";
 
 export default function Home() {
   return (
-    <section className="max-w-7xl mx-auto">
+    <section className="pl-0 lg:pl-6">
       <Banner />
       <Record />
       <ProductCap />

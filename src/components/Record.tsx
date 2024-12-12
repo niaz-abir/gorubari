@@ -4,7 +4,7 @@ import { PiTShirtDuotone } from "react-icons/pi";
 
 const Record = () => {
   return (
-    <div className="bg-gradient-to-r from-[#e0584c] to-[#FD3B29] mt-14 rounded-sm">
+    <div className="bg-gradient-to-r from-[#e0584c] to-[#FD3B29] mt-14 lg:mr-14 ml-0 lg:ml-4 mr-0 rounded-sm">
       <div className="max-w-4xl mx-auto">
         <div className=" grid grid-cols-1  lg:grid-cols-3 gap-4 p-8 rounded-sm">
           <div className="pl-8">

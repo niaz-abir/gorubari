@@ -14,7 +14,7 @@ const ChooseUs = () => {
       id: 1,
       name: "Exceptional Quality",
       icon: <AiFillProduct />,
-      color: "#219B9D",
+      color: "#00A9A5",
       text: "Count on us for top-notch apparel made with premium materials, ensuring comfort and durability in every piece.",
     },
     {
@@ -49,8 +49,8 @@ const ChooseUs = () => {
   };
 
   return (
-    <section className="mt-16 mb-8 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] p-4">
-      <h1 className="font-bold text-center text-4xl">Why Choose us?</h1>
+    <section className="mt-16 mb-8 mr-8 rounded-sm bg-gradient-to-r from-[#e0584c] to-[#FD3B29] p-4">
+      <h1 className="font-bold text-center text-4xl pt-4">Why Choose us?</h1>
       <p className=" pb-8 pt-2 text-black text-[18px] text-center">
         We have lot of support form us .You can watch it and discuss with us.
       </p>

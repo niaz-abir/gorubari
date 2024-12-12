@@ -97,8 +97,8 @@ const Shirt = () => {
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className=" p-2 rounded-md">price :</span>
-                {tShirt.price}
+                <span className=" pl-2 rounded-md">price :</span>
+                {tShirt.price} each
               </motion.h1>
               <motion.h1
                 className=" flex  rounded-md gap-2  text-[20px] lg:text-[18px] items-center"
@@ -108,8 +108,8 @@ const Shirt = () => {
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className=" p-2 rounded-md">Min :</span>
-                {tShirt.min}
+                <span className=" pl-2 rounded-md">Quantity :</span>
+                {tShirt.min} minium
               </motion.h1>
               <div className="flex items-center gap-x-4 pt-4 ">
                 <Link href="/#project">

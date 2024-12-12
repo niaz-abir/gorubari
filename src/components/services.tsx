@@ -80,7 +80,7 @@ const Services = () => {
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className="text-[#f37021] p-2 rounded-md">
+                <span className="text-[#FD3B29] p-2 rounded-md">
                   {service.icon}
                 </span>
                 {service.name}

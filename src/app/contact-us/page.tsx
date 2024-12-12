@@ -153,11 +153,11 @@ const ContactUs = () => {
             </div>
 
             <div>
-              <div className="text-black relative px-2 p-4 bg-[#17334e] rounded-md shadow-lg sm:rounded-3xl ">
+              <div className="text-black relative px-2 p-4  rounded-md shadow-lg sm:rounded-3xl ">
                 <div className="text-center pb-4 -mt-4">
                   <h1 className="text-3xl font-bold pt-4">Contact Us!</h1>
 
-                  <p className="text-gray-300">
+                  <p className="text-black">
                     Fill up the form below to send us a message.
                   </p>
                 </div>
@@ -170,7 +170,7 @@ const ContactUs = () => {
                       <input
                         type="text"
                         placeholder="name"
-                        className={`input input-bordered bg-[#1a2f45] w-[350px]  lg:w-[450px] ${
+                        className={`input input-bordered bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
                           errors.user_name ? "border-red-500" : ""
                         }`}
                         {...register("user_name", {
@@ -192,7 +192,7 @@ const ContactUs = () => {
                         required
                         type="text"
                         placeholder="email"
-                        className={`input input-bordered bg-[#1a2f45] w-[350px]  lg:w-[450px] ${
+                        className={`input input-bordered bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
                           errors.user_email ? "border-red-500" : ""
                         }`}
                         {...register("user_email", {
@@ -210,7 +210,7 @@ const ContactUs = () => {
                         <span className="text-black ">Message:</span>
                       </div>
                       <textarea
-                        className={` textarea textarea-bordered h-24  bg-[#1a2f45] w-[350px]  lg:w-[450px] ${
+                        className={` textarea textarea-bordered h-24  bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
                           errors.user_message ? "border-red-500" : ""
                         }`}
                         {...register("user_message", {
@@ -226,7 +226,7 @@ const ContactUs = () => {
                     )}
 
                     <div className="mt-4 mb-4">
-                      <button className="w-[350px]  lg:w-[450px] h-14 btn-outline border-none duration-300 rounded-md text-[18px] text-black font-bold hover:bg-[#2a4f75] bg-[#1a2f45]">
+                      <button className=" w-36 h-14 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300">
                         Submit
                       </button>
                     </div>

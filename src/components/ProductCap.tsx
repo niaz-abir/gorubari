@@ -16,7 +16,7 @@ const ProductCap = () => {
       no: "02",
       image: image1,
       price: "$120",
-      min: 25,
+      quantity: 25,
     },
     {
       id: 4,
@@ -24,7 +24,7 @@ const ProductCap = () => {
       no: "04",
       image: image2,
       price: "$160",
-      min: 35,
+      quantity: 35,
     },
     {
       id: 5,
@@ -32,7 +32,7 @@ const ProductCap = () => {
       no: "05",
       image: image3,
       price: "$210",
-      min: 45,
+      quantity: 45,
     },
   ];
 
@@ -74,7 +74,7 @@ const ProductCap = () => {
                 alt=""
                 height={500}
                 width={520}
-                className="object-fit object-center   min-w-[170px]"
+                className="object-fit object-center quantity-w-[170px]"
               ></Image>
               <motion.h1
                 className="font-bold flex  rounded-md gap-2 pb-2 pt-2 text-[20px] lg:text-[24px] items-center"
@@ -89,7 +89,7 @@ const ProductCap = () => {
                 </span>
                 {cap.name}
               </motion.h1>
-              <motion.h1
+              <motion.h3
                 className=" flex  rounded-md gap-2  text-[20px] lg:text-[18px] items-center"
                 variants={{
                   hidden: { opacity: 0, x: -50 },
@@ -97,10 +97,10 @@ const ProductCap = () => {
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className=" p-2 rounded-md">price :</span>
-                {cap.price}
-              </motion.h1>
-              <motion.h1
+                <span className="pl-2 rounded-md">price :</span>
+                {cap.price} each
+              </motion.h3>
+              <motion.h3
                 className=" flex  rounded-md gap-2  text-[20px] lg:text-[18px] items-center"
                 variants={{
                   hidden: { opacity: 0, x: -50 },
@@ -108,9 +108,9 @@ const ProductCap = () => {
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className=" p-2 rounded-md">Min :</span>
-                {cap.min}
-              </motion.h1>
+                <span className=" pl-2 rounded-md">quantity :</span>
+                {cap.quantity} minium
+              </motion.h3>
               <div className="flex items-center gap-x-4 pt-4 ">
                 <Link href="/#project">
                   <button className="w-36 h-14 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300">

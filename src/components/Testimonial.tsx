@@ -10,7 +10,7 @@ const Testimonial = () => {
         <div className="flex items-center justify-center flex-col mb-8 gap-y-2 py-5">
           <h2 className="text-2xl lg:text-4xl font-bold  text-center text-black">
             Heres what our
-            <span className="text-[#e67c3b] "> customers</span> have to say
+            <span className="text-[#FD3B29] "> customers</span> have to say
           </h2>
           <p className="text-[18px] font-medium text-black">
             Discover how our service can benefit you have grow.

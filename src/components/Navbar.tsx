@@ -30,10 +30,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="bg-[#f3eddd] shadow-md shadow-[#b1aa9c] max-w-7xl mx-auto rounded-sm">
+    <div className="bg-[#f3eddd] shadow-md shadow-[#b1aa9c] ml-0 lg:ml-6 mr-0 lg:mr-6 rounded-sm">
       <nav className="mt-2">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <h1 className="flex gap-2 items-center text-2xl">
+        <div className="max-w-screen-xl flex flex-wrap items-center  justify-between mx-auto p-4">
+          <h1 className="flex gap-2 -ml-8 items-center text-2xl">
             <GiBee size={35} />
             <Link href="/">Clothings Bee</Link>
           </h1>
@@ -76,7 +76,7 @@ const Navbar = () => {
                   href="/#package"
                   className="block py-2 px-3 text-[20px] lg:w-full   w-36 text-black rounded md:border-0"
                 >
-                  Caf
+                  Cap
                 </a>
               </li>
               <li>

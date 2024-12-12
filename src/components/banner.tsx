@@ -1,7 +1,15 @@
 "use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css"; // Core Swiper CSS
+import "swiper/css/pagination"; // Pagination module
+import { Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
-import image from "../../public/images/hero.jpg";
 import Link from "next/link";
+
+// Import your images
+import image1 from "../../public/images/carosuel (3).jpg";
+import image2 from "../../public/images/carosuel (1).jpg";
+import image3 from "../../public/images/carosuel (2).jpg";
 
 export function Banner() {
   return (
@@ -26,14 +34,43 @@ export function Banner() {
             </Link>
           </div>
         </div>
-        <div className="ml-0 lg:ml-6">
-          <Image
-            src={image}
-            alt="Hero"
+        <div className="ml-0 lg:ml-6 w-full">
+          <Swiper
+            modules={[Pagination, Autoplay]}
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            loop={true}
             className="rounded-md"
-            height="600"
-            width="600"
-          />
+          >
+            {/* Swiper Slides */}
+            <SwiperSlide>
+              <Image
+                src={image1}
+                alt="Hero 1"
+                className="rounded-md"
+                height={600}
+                width={600}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={image2}
+                alt="Hero 2"
+                className="rounded-md"
+                height={600}
+                width={600}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={image3}
+                alt="Hero 3"
+                className="rounded-md"
+                height={600}
+                width={600}
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
     </section>
