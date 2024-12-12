@@ -49,7 +49,7 @@ const ChooseUs = () => {
   };
 
   return (
-    <section className="mt-16 mb-8 mr-8 rounded-sm bg-gradient-to-r from-[#e0584c] to-[#FD3B29] p-4">
+    <section className="mt-16 mb-8 mr-0 lg:mr-8 rounded-sm bg-gradient-to-r from-[#e0584c] to-[#FD3B29] p-4">
       <h1 className="font-bold text-center text-4xl pt-4">Why Choose us?</h1>
       <p className=" pb-8 pt-2 text-black text-[18px] text-center">
         We have lot of support form us .You can watch it and discuss with us.

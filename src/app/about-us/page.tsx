@@ -30,7 +30,7 @@ const AboutUs = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl p-8 mx-auto rounded-sm bg-gradient-to-r from-[#e0584c] to-[#FD3B29] ">
+      <div className="max-w-7xl p-8 mt-14 mx-auto rounded-sm bg-gradient-to-r from-[#e0584c] to-[#FD3B29] ">
         <h1 className="pt-4 font-bold pb-4 text-3xl text-white">
           Meet Our Team
         </h1>
@@ -44,6 +44,10 @@ const AboutUs = () => {
           experiences, our team works together to make your style vision a
           reality. Get to know the faces shaping the future of Clothings Bee
         </p>
+
+        <button className="w-28 h-14 text-black bg-gradient-to-r from-[#b6ae98] to-[#f3eddd] hover:bg-[#132836] border-none rounded-md text-[18px]  font-bold transition-all duration-300">
+          Lets Talk
+        </button>
       </div>
 
       <div className="flex flex-col p-4 lg:flex-row gap-4 items-center mt-24">
