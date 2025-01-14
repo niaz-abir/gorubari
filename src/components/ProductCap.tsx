@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { RiGraduationCapFill, RiWebhookLine } from "react-icons/ri";
 import image1 from "../../public/images/cap (1).jpg";
 import image2 from "../../public/images/cap (2).jpg";
 import image3 from "../../public/images/cap (3).jpg";
@@ -15,24 +14,36 @@ const ProductCap = () => {
       name: "Porkpie Cap",
       no: "02",
       image: image1,
-      price: "$120",
-      quantity: 25,
+      price: "£7.99",
+      quantity: 24,
+      total: "£191.76",
     },
     {
       id: 4,
       name: "Fedora Cap",
       no: "04",
       image: image2,
-      price: "$160",
-      quantity: 35,
+      price: "£6.99",
+      quantity: 50,
+      total: "£349.50",
     },
     {
       id: 5,
       name: "Baseball Cap",
       no: "05",
       image: image3,
-      price: "$210",
-      quantity: 45,
+      price: "£5.99",
+      quantity: 100,
+      total: "£599.00",
+    },
+    {
+      id: 6,
+      name: "Porkpie Cap",
+      no: "02",
+      image: image1,
+      price: "£5.49",
+      quantity: 200,
+      total: "£1098",
     },
   ];
 
@@ -46,11 +57,11 @@ const ProductCap = () => {
           solutions that drive business growth.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 mr-2">
         {allCaps.map((cap) => (
           <motion.div
             key={cap.id}
-            className="bg-[#e7dec7] rounded-md p-4 lg:w-96 m-6 relative"
+            className="bg-[#e7dec7] rounded-md p-2 lg:w-96 m-4 relative"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -76,41 +87,44 @@ const ProductCap = () => {
                 width={520}
                 className="object-fit object-center quantity-w-[170px]"
               ></Image>
+
               <motion.h1
-                className="font-bold flex  rounded-md gap-2 pb-2 pt-2 text-[20px] lg:text-[24px] items-center"
+                className=" flex  rounded-md gap-2 pt-8  text-[20px] lg:text-[24px] items-center"
                 variants={{
                   hidden: { opacity: 0, x: -50 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className=" p-2 rounded-md">
-                  <RiGraduationCapFill />
-                </span>
-                {cap.name}
+                <span className=" pl-2 rounded-md font-bold">Each Price :</span>
+                {cap?.price}
               </motion.h1>
-              <motion.h3
-                className=" flex  rounded-md gap-2  text-[20px] lg:text-[18px] items-center"
+
+              <motion.h1
+                className=" flex  rounded-md gap-2  text-[20px] lg:text-[24px] items-center"
                 variants={{
                   hidden: { opacity: 0, x: -50 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className="pl-2 rounded-md">price :</span>
-                {cap.price} each
-              </motion.h3>
-              <motion.h3
-                className=" flex  rounded-md gap-2  text-[20px] lg:text-[18px] items-center"
+                <span className=" pl-2 rounded-md font-bold">Quantity :</span>
+                {cap?.quantity}
+              </motion.h1>
+
+              <motion.h1
+                className=" flex  rounded-md gap-2  text-[20px] lg:text-[24px] items-center"
                 variants={{
                   hidden: { opacity: 0, x: -50 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className=" pl-2 rounded-md">quantity :</span>
-                {cap.quantity} minium
-              </motion.h3>
+                <span className=" pl-2 rounded-md font-bold">
+                  Total Price :
+                </span>
+                {cap?.total}
+              </motion.h1>
               <div className="flex items-center gap-x-4 pt-4 ">
                 <Link href="/#project">
                   <button className="w-36 h-14 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300">

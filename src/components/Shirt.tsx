@@ -2,9 +2,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { RiGraduationCapFill } from "react-icons/ri";
-import image1 from "../../public/images/tshirt (1).jpg";
-import image2 from "../../public/images/tshirt (2).jpg";
-import image3 from "../../public/images/tshirt (3).jpg";
+import image1 from "../../public/images/tshirt (4).jpg";
+import image2 from "../../public/images/tshirt (5).jpg";
+import image3 from "../../public/images/tshirt (6).jpg";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,24 +15,36 @@ const Shirt = () => {
       name: "Henley TShirt",
       no: "02",
       image: image1,
-      price: "$120",
-      min: 25,
+      price: "£7.99",
+      quantity: 24,
+      total: "£191.76",
     },
     {
       id: 4,
       name: "Crew New",
       no: "04",
       image: image2,
-      price: "$160",
-      min: 35,
+      price: "£6.99",
+      quantity: 50,
+      total: "£349.50",
     },
     {
       id: 5,
       name: "Scoop Next",
       no: "05",
       image: image3,
-      price: "$210",
-      min: 45,
+      price: "£5.99",
+      quantity: 100,
+      total: "£599.00",
+    },
+    {
+      id: 2,
+      name: "Henley TShirt",
+      no: "02",
+      image: image1,
+      price: "£5.49",
+      quantity: 200,
+      total: "£1098",
     },
   ];
 
@@ -46,11 +58,11 @@ const Shirt = () => {
           solutions that drive business growth.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
         {allTShirts?.map((tShirt) => (
           <motion.div
             key={tShirt?.id}
-            className="bg-[#e7dec7] rounded-md p-4 lg:w-96 m-6 relative"
+            className="bg-[#e7dec7] rounded-md p-4 lg:w-96 m-4 relative"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -76,41 +88,45 @@ const Shirt = () => {
                 width={520}
                 className="object-fit object-center   min-w-[170px]"
               ></Image>
+
               <motion.h1
-                className="font-bold flex  rounded-md gap-2 pb-2 pt-2 text-[20px] lg:text-[24px] items-center"
+                className=" flex  rounded-md gap-2 pt-8  text-[20px] lg:text-[24px] items-center"
                 variants={{
                   hidden: { opacity: 0, x: -50 },
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ duration: 0.7 }}
               >
-                <span className=" p-2 rounded-md">
-                  <RiGraduationCapFill />
+                <span className=" pl-2 rounded-md font-bold">Each Price :</span>
+                {tShirt?.price}
+              </motion.h1>
+
+              <motion.h1
+                className=" flex  rounded-md gap-2  text-[20px] lg:text-[24px] items-center"
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                transition={{ duration: 0.7 }}
+              >
+                <span className=" pl-2 rounded-md font-bold">Quantity :</span>
+                {tShirt?.quantity}
+              </motion.h1>
+
+              <motion.h1
+                className=" flex  rounded-md gap-2  text-[20px] lg:text-[24px] items-center"
+                variants={{
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                transition={{ duration: 0.7 }}
+              >
+                <span className=" pl-2 rounded-md font-bold">
+                  Total Price :
                 </span>
-                {tShirt.name}
+                {tShirt?.total}
               </motion.h1>
-              <motion.h1
-                className=" flex  rounded-md gap-2  text-[20px] lg:text-[18px] items-center"
-                variants={{
-                  hidden: { opacity: 0, x: -50 },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ duration: 0.7 }}
-              >
-                <span className=" pl-2 rounded-md">price :</span>
-                {tShirt.price} each
-              </motion.h1>
-              <motion.h1
-                className=" flex  rounded-md gap-2  text-[20px] lg:text-[18px] items-center"
-                variants={{
-                  hidden: { opacity: 0, x: -50 },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ duration: 0.7 }}
-              >
-                <span className=" pl-2 rounded-md">Quantity :</span>
-                {tShirt.min} minium
-              </motion.h1>
+
               <div className="flex items-center gap-x-4 pt-4 ">
                 <Link href="/#project">
                   <button className="w-36 h-14 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300">
