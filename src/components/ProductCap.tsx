@@ -61,7 +61,7 @@ const ProductCap = () => {
         {allCaps.map((cap) => (
           <motion.div
             key={cap.id}
-            className="bg-[#e7dec7] rounded-md p-2 lg:w-96 m-4 relative"
+            className="bg-[#e7dec7] rounded-md p-2 lg:w-80 m-4 relative"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
