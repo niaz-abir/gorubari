@@ -115,10 +115,10 @@ const ContactUs = () => {
                       Contact
                     </h3>
                     <p className="text-black dark:text-slate-400">
-                      Mobile: +880263627
+                      Mobile: +44 7459 449187
                     </p>
                     <p className="text-black dark:text-slate-400">
-                      Mail: graphitech.sales@gmail.com
+                      Mail: clothingsbee.sales@gmail.com
                     </p>
                   </div>
                 </li>

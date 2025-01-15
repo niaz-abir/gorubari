@@ -128,7 +128,7 @@ const Shirt = () => {
               </motion.h1>
 
               <div className="flex items-center gap-x-4 pt-4 ">
-                <Link href="/#project">
+                <Link href="order-now">
                   <button className="w-36 h-14 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300">
                     Order now
                   </button>

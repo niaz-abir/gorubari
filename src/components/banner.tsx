@@ -27,10 +27,11 @@ export function Banner() {
             crafted to complement your unique personality.
           </p>
           <div className="flex items-center gap-x-4 pt-4 pb-4">
-            <Link href="/#project">
-              <button className="w-28 h-14 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300">
-                Our Product
-              </button>
+            <Link
+              href="/#caps"
+              className="w-28 h-14 pt-3 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300"
+            >
+              Our Product
             </Link>
           </div>
         </div>
