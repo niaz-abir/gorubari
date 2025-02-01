@@ -84,10 +84,10 @@ const ContactUs = () => {
                       Our Address
                     </h3>
                     <p className="text-black dark:text-slate-400">
-                      1300 Elmwood Avenue,
+                      E13 9BL, Fawn road,
                     </p>
                     <p className="text-black dark:text-slate-400">
-                      Buffalo, NY 14222, USA
+                      Upton park, London, United Kingdoom.
                     </p>
                   </div>
                 </li>
@@ -118,7 +118,7 @@ const ContactUs = () => {
                       Mobile: +44 7459 449187
                     </p>
                     <p className="text-black dark:text-slate-400">
-                      Mail: clothingsbee.sales@gmail.com
+                      Mail: clothingsbee.co.uk@gmail.com
                     </p>
                   </div>
                 </li>
@@ -145,7 +145,7 @@ const ContactUs = () => {
                       Working hours
                     </h3>
                     <p className="text-black dark:text-slate-400">
-                      Monday - Friday: 08:00 - 17:00
+                      Monday - Friday: 08:00am - 10:00pm
                     </p>
                   </div>
                 </li>

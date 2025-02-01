@@ -36,7 +36,7 @@ const Footer = () => {
 
         <nav className="font-semibold text-[16px]">
           <h6 className="font-bold text-black text-[18px]">Services</h6>
-          <a className="link link-hover text-black">Caf</a>
+          <a className="link link-hover text-black">Cap</a>
           <a className="link link-hover text-black">TShirt</a>
           <a className="link link-hover text-black">Delivery</a>
           <a className="link link-hover text-black">Discount</a>
@@ -48,24 +48,22 @@ const Footer = () => {
         </nav>
         <nav>
           <h6 className="font-semibold text-[16px]">Address</h6>
-          <p className="text-[20px]"> 1300 Elmwood Avenue,</p>
-          <p className="text-[20px]"> Buffalo, NY 14222, USA</p>
+          <p className="text-[20px]"> E13 9BL, Fawn road,</p>
+          <p className="text-[20px]"> Upton park, London, United Kingdoom.</p>
           <h6 className="font-semibold text-[16px] pt-2">Number:</h6>
-          <p className="text-[20px]"> +1 716 406 7972</p>
+          <p className="text-[20px]">+44 7459 449187 </p>
         </nav>
       </footer>
       <div className="flex justify-between p-2">
         <div>
-          <h4>Copyright © $2024 - All right reserved</h4>
+          <h4>Copyright©clothingsbee$2024 </h4>
         </div>
         <div className="flex gap-2">
-          <Link href="https://www.facebook.com/graphitechsolution2">
+          <Link href="https://www.facebook.com/clothingsbeeuk">
             <FaFacebookSquare className="text-3xl " />
           </Link>
-          <FaInstagram className="text-3xl" />
-
-          <Link href="https://www.linkedin.com/company/graphitech-solution/?viewAsMember=true">
-            <FaLinkedin className="text-3xl " />
+          <Link href="http://instagram.com/clothingsbeeuk/">
+            <FaInstagram className="text-3xl" />
           </Link>
         </div>
       </div>
