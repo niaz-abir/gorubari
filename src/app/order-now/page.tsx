@@ -113,6 +113,7 @@ const Order = () => {
                     <option value="">Select product type</option>
                     <option value="Cap">Cap</option>
                     <option value="T-Shirt">T-Shirt</option>
+                    <option value="hoodie">Hoodie</option>
                   </select>
                   {errors.productType && (
                     <p className="text-red-500 text-sm">

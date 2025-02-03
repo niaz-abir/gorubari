@@ -54,12 +54,12 @@ const Footer = () => {
           <p className="text-[20px]">+44 7459 449187 </p>
         </nav>
       </footer>
-      <div className="flex justify-between p-2">
+      <div className="flex justify-between p-2 mt-4">
         <div>
           <h4>Copyright©clothingsbee$2024 </h4>
         </div>
         <div className="flex gap-2">
-          <Link href="https://www.facebook.com/clothingsbeeuk">
+          <Link href="https://www.facebook.com/clothingsbeeuk/">
             <FaFacebookSquare className="text-3xl " />
           </Link>
           <Link href="http://instagram.com/clothingsbeeuk/">

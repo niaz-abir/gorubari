@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import Hoodie from "@/components/Hoodie";
 import ProductCap from "@/components/ProductCap";
 import Record from "@/components/Record";
 import Shirt from "@/components/Shirt";
@@ -15,6 +16,7 @@ export default function Home() {
       <Record />
       <ProductCap />
       <Shirt />
+      <Hoodie />
       <Services />
       <Testimonial />
       <ChooseUs />

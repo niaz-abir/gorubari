@@ -7,6 +7,7 @@ import Link from "next/link";
 import { AiOutlineMenuFold } from "react-icons/ai";
 
 import image3 from "../../public/images/clothlogo.png";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,10 +36,12 @@ const Navbar = () => {
     <div className="bg-[#f3eddd] shadow-md shadow-[#b1aa9c] ml-0 lg:ml-6 mr-0 lg:mr-6 rounded-sm">
       <nav className="mt-2">
         <div className="max-w-screen-xl flex flex-wrap items-center  justify-between mx-auto p-4">
-          <h1 className="flex gap-2 ml-0 lg:-ml-8 items-center text-2xl">
+          {/* <h1 className="flex gap-2 ml-0 lg:-ml-8 items-center text-2xl">
             <GiBee size={35} />
             <Link href="/">Clothings Bee</Link>
-          </h1>
+          </h1> */}
+          <Image src={image3} alt="" height={40} width={200} />
+          {/* <img src={image3} alt=""/> */}
           <button
             onClick={toggleMenu}
             data-collapse-toggle="navbar-default"
@@ -79,6 +82,14 @@ const Navbar = () => {
                   className="block py-2 px-3 text-[20px] lg:w-full   w-36 text-black rounded md:border-0"
                 >
                   Cap
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/#package"
+                  className="block py-2 px-3 text-[20px] lg:w-full   w-36 text-black rounded md:border-0"
+                >
+                  Hoodie
                 </a>
               </li>
               <li>

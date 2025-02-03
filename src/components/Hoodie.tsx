@@ -1,68 +1,67 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { RiGraduationCapFill } from "react-icons/ri";
-import image1 from "../../public/images/tshirt (4).jpg";
-import image2 from "../../public/images/tshirt (5).jpg";
-import image3 from "../../public/images/tshirt (6).jpg";
+import image1 from "../../public/images/hoodie (1).jpg";
+import image2 from "../../public/images/hoodie (2).jpg";
+import image3 from "../../public/images/hoodie (3).jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-const Shirt = () => {
-  const allTShirts = [
+const Hoodie = () => {
+  const allCaps = [
     {
       id: 2,
-      name: "Henley TShirt",
+      name: "Porkpie Cap",
       no: "02",
       image: image1,
-      price: "£6.99",
-      quantity: 24,
-      total: "£167.76",
+      price: "£17.99",
+      quantity: 12,
+      total: "£215.88",
     },
     {
       id: 4,
-      name: "Crew New",
+      name: "Fedora Cap",
       no: "04",
       image: image2,
-      price: "£5.99",
-      quantity: 50,
-      total: "£299.50",
+      price: "£14.99",
+      quantity: 24,
+      total: "£349.50",
     },
     {
       id: 5,
-      name: "Scoop Next",
+      name: "Baseball Cap",
       no: "05",
-      image: image3,
-      price: "£5.49",
-      quantity: 100,
-      total: "£549.00",
+      image: image1,
+      price: "£13.99",
+      quantity: 50,
+      total: "£699.00",
     },
     {
-      id: 2,
-      name: "Henley TShirt",
+      id: 6,
+      name: "Porkpie Cap",
       no: "02",
-      image: image1,
-      price: "£5",
-      quantity: 200,
-      total: "£1000",
+      image: image3,
+      price: "£12.99",
+      quantity: 100,
+      total: "£1299",
     },
   ];
 
   return (
-    <section id="tShirts">
+    <section id="caps">
       <div className="text-center mb-14 mt-14 p-4">
-        <h1 className="font-bold text-center text-4xl">Our TShirt</h1>
+        <h1 className="font-bold text-center text-4xl">Our Hoodie</h1>
         <p className="text-[18px] text-black">
           From enhancing your digital presence to creating impactful designs, we
           provide <br />
           solutions that drive business growth.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-3">
-        {allTShirts?.map((tShirt) => (
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 mr-2">
+        {allCaps.map((cap) => (
           <motion.div
-            key={tShirt?.id}
-            className="bg-[#e7dec7] rounded-md p-4 lg:w-80 m-4 relative"
+            key={cap.id}
+            className="bg-[#e7dec7] rounded-md p-2 lg:w-80 m-4 relative"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -82,11 +81,11 @@ const Shirt = () => {
               }}
             >
               <Image
-                src={tShirt?.image}
+                src={cap?.image}
                 alt=""
                 height={500}
                 width={520}
-                className="object-fit object-center   min-w-[170px]"
+                className="object-fit object-center quantity-w-[170px]"
               ></Image>
 
               <motion.h1
@@ -98,7 +97,7 @@ const Shirt = () => {
                 transition={{ duration: 0.7 }}
               >
                 <span className=" pl-2 rounded-md font-bold">Each Price :</span>
-                {tShirt?.price}
+                {cap?.price}
               </motion.h1>
 
               <motion.h1
@@ -110,7 +109,7 @@ const Shirt = () => {
                 transition={{ duration: 0.7 }}
               >
                 <span className=" pl-2 rounded-md font-bold">Quantity :</span>
-                {tShirt?.quantity}
+                {cap?.quantity}
               </motion.h1>
 
               <motion.h1
@@ -124,9 +123,8 @@ const Shirt = () => {
                 <span className=" pl-2 rounded-md font-bold">
                   Total Price :
                 </span>
-                {tShirt?.total}
+                {cap?.total}
               </motion.h1>
-
               <div className="flex items-center gap-x-4 pt-4 ">
                 <Link href="order-now">
                   <button className="w-36 h-14 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300">
@@ -142,4 +140,4 @@ const Shirt = () => {
   );
 };
 
-export default Shirt;
+export default Hoodie;

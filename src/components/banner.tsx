@@ -7,9 +7,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Import your images
-import image1 from "../../public/images/carosuel (3).jpg";
-import image2 from "../../public/images/carosuel (1).jpg";
-import image3 from "../../public/images/carosuel (2).jpg";
+import image1 from "../../public/images/carosuel (5).jpg";
+import image2 from "../../public/images/carosuel (6).jpg";
+import image3 from "../../public/images/carosuel (4).jpg";
 
 export function Banner() {
   return (
@@ -29,7 +29,7 @@ export function Banner() {
           <div className="flex items-center gap-x-4 pt-4 pb-4">
             <Link
               href="/#caps"
-              className="w-28 h-14 pt-3 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300"
+              className="w-32 h-12 pl-2 pt-3 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300"
             >
               Our Product
             </Link>
