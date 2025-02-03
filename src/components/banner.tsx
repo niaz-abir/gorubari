@@ -17,14 +17,13 @@ export function Banner() {
       <div className="grid backdrop-blur-xl p-6 rounded-md grid-cols-1  mt-10 items-center justify-items-center md:grid-cols-2">
         <div className="flex flex-col items-center gap-y-5 text-center md:items-start md:text-start">
           <h1 className="text-[clamp(2rem,_4vw+1rem,_4rem)] font-extrabold capitalize leading-tight tracking-tight">
-            Elevate Your Look with Premium Apparel !!!
+            Premium Custom Apparel for Your Brand & Business.
           </h1>
           <p className="max-w-[35rem] text-lg leading-relaxed text-foreground-500">
-            At <span className="font-bold">Clothings Bee</span>, we redefine
-            fashion with high-quality caps and t-shirts tailored to your taste.
-            Our mission is to deliver style and comfort, helping you express
-            yourself confidently with versatile designs and top-notch materials
-            crafted to complement your unique personality.
+            <span className="font-bold">Clothings Bee </span>
+            is a UK-based custom clothing business with 7 years of experience.
+            We specialize in bulk orders of high-quality custom T-shirts,
+            hoodies, caps, and beanies, tailored to your brand’s needs.
           </p>
           <div className="flex items-center gap-x-4 pt-4 pb-4">
             <Link

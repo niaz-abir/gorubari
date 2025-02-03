@@ -119,7 +119,7 @@ const Navbar = () => {
       {isScrolled && (
         <div className="fixed bottom-10 right-10 z-50">
           <a
-            href="https://wa.me/+44 7464 929819"
+            href="https://wa.me/+8801845692696"
             target="_blank"
             rel="noopener noreferrer"
             className=" p-3 rounded-full shadow-lg text-black"
