@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
+
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -8,14 +9,14 @@ import image1 from "../../../public/images/capprice.jpg";
 import image2 from "../../../public/images/tshirtprice.jpg";
 
 interface TInput {
-  email: string;
+  user_email: string;
   productType: string;
   color: string;
   quantity: number;
   additionalNote: string;
   phone: string;
   address: string;
-  image: FileList;
+  user_image: FileList;
 }
 
 const Order = () => {
@@ -26,7 +27,7 @@ const Order = () => {
     formState: { errors },
   } = useForm<TInput>();
 
-  const [imageUrl, setImageUrl] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
   const form = useRef<HTMLFormElement>(null);
 
   const uploadImage = async (file: File) => {
@@ -45,40 +46,39 @@ const Order = () => {
   };
 
   const onSubmit: SubmitHandler<TInput> = async (data) => {
-    let uploadedImageUrl = null;
-    if (data?.image && data?.image[0]) {
-      uploadedImageUrl = await uploadImage(data?.image[0]);
-      setImageUrl(uploadedImageUrl);
-    }
+    setIsLoading(true);
 
-    const submissionData = {
-      ...data,
-      imageUrl: uploadedImageUrl,
-    };
-    console.log(imageUrl);
+    try {
+      let uploadedImageUrl = null;
 
-    if (form.current) {
-      emailjs
-        .send(
+      if (data?.user_image && data?.user_image[0]) {
+        uploadedImageUrl = await uploadImage(data?.user_image[0]);
+      }
+
+      const submissionData = {
+        ...data,
+        imageUrl: uploadedImageUrl,
+      };
+
+      if (form.current) {
+        await emailjs.send(
           "servicegraphitech",
           "template_ulg1uq6",
           submissionData,
           "B9eRXvIMGw4yENXED"
-        )
-        .then(
-          () => {
-            console.log("SUCCESS!");
-            reset();
-          },
-          (error) => {
-            console.log("FAILED...", error.text);
-          }
         );
+        reset();
+        alert("Order placed successfully!");
+      }
+    } catch (error) {
+      console.error("Error submitting the form:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   return (
-    <section className="flex lg:flex-row  flex-col-reverse gap-4 mt-8 max-w-7xl mx-auto">
+    <section className="flex flex-col-reverse lg:flex-row gap-4 mt-8 max-w-7xl mx-auto">
       <div className="flex flex-col gap-4 p-4">
         <Image src={image1} height={450} width={450} alt="price" />
         <Image src={image2} height={450} width={450} alt="price" />
@@ -93,14 +93,19 @@ const Order = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <form ref={form} onSubmit={handleSubmit(onSubmit)}>
-              <div className="flex lg:flex-row flex-col gap-3 pb-2">
-                <label className="form-control w-full max-w-xs">
-                  <span className="label-text font-bold text-[14px] pb-2">
+            <form
+              ref={form}
+              onSubmit={handleSubmit(onSubmit)}
+              className="w-full"
+            >
+              {/* Product Type & Color */}
+              <div className="flex flex-col lg:flex-row gap-3 pb-4">
+                <div className="w-full">
+                  <label className="label font-bold text-sm pb-1">
                     Product Type:
-                  </span>
+                  </label>
                   <select
-                    className="select select-bordered  bg-[#f3eddd] w-[350px]  lg:w-[300px]"
+                    className="select select-bordered bg-[#f3eddd] w-full"
                     {...register("productType", {
                       required: "Product type is required",
                     })}
@@ -109,131 +114,147 @@ const Order = () => {
                     <option value="Cap">Cap</option>
                     <option value="T-Shirt">T-Shirt</option>
                   </select>
-                </label>
-                {errors.productType && (
-                  <p className="text-red-500">{errors.productType.message}</p>
-                )}
+                  {errors.productType && (
+                    <p className="text-red-500 text-sm">
+                      {errors.productType.message}
+                    </p>
+                  )}
+                </div>
 
-                <label className="form-control w-full max-w-xs">
-                  <span className="label-text font-bold text-[14px] pb-2">
-                    Color:
-                  </span>
+                <div className="w-full">
+                  <label className="label font-bold text-sm pb-1">Color:</label>
                   <input
                     type="text"
                     placeholder="Color"
-                    className="input input-bordered bg-[#f3eddd] w-[350px]  lg:w-[300px]"
+                    className="input input-bordered bg-[#f3eddd] w-full"
                     {...register("color", { required: "Color is required" })}
                   />
-                </label>
-                {errors.color && (
-                  <p className="text-red-500">{errors.color.message}</p>
-                )}
+                  {errors.color && (
+                    <p className="text-red-500 text-sm">
+                      {errors.color.message}
+                    </p>
+                  )}
+                </div>
               </div>
 
-              <p className="pt-4 text-gray-700 pb-2">
-                For better price better high quantity
-              </p>
-
-              <div className="flex lg:flex-row flex-col gap-3 pb-2">
-                <label className="form-control w-full max-w-xs">
-                  <span className="label-text font-bold text-[14px] pb-2">
+              {/* Quantity & Image */}
+              <div className="flex flex-col lg:flex-row gap-3 pb-4">
+                <div className="w-full">
+                  <label className="label font-bold text-sm pb-1">
                     Quantity:
-                  </span>
+                  </label>
                   <input
                     type="number"
                     placeholder="Quantity"
-                    className="input input-bordered w-full bg-[#f3eddd]"
+                    className="input input-bordered bg-[#f3eddd] w-full"
                     {...register("quantity", {
                       required: "Quantity is required",
                       valueAsNumber: true,
                     })}
                   />
-                </label>
-                {errors.quantity && (
-                  <p className="text-red-500">{errors.quantity.message}</p>
-                )}
+                  {errors.quantity && (
+                    <p className="text-red-500 text-sm">
+                      {errors.quantity.message}
+                    </p>
+                  )}
+                </div>
 
-                <label className="form-control w-full max-w-xs">
-                  <span className="label-text font-bold text-[14px] pb-2">
+                <div className="w-full">
+                  <label className="label font-bold text-sm pb-1">
                     Upload Product Image:
-                  </span>
+                  </label>
                   <input
                     type="file"
-                    className="file-input file-input-bordered w-full bg-[#f3eddd]"
-                    {...register("image", { required: "Image is required" })}
+                    className="file-input file-input-bordered bg-[#f3eddd] w-full"
+                    {...register("user_image", {
+                      required: "Image is required",
+                    })}
                   />
-                </label>
-                {errors.image && (
-                  <p className="text-red-500">{errors.image.message}</p>
-                )}
+                  {errors.user_image && (
+                    <p className="text-red-500 text-sm">
+                      {errors.user_image.message}
+                    </p>
+                  )}
+                </div>
               </div>
 
-              <div className="flex lg:flex-row flex-col gap-3 pb-2">
-                <label className="form-control w-full max-w-xs">
-                  <span className="label-text font-bold text-[14px] pb-2">
-                    Email:
-                  </span>
+              {/* Email & Phone */}
+              <div className="flex flex-col lg:flex-row gap-3 pb-4">
+                <div className="w-full">
+                  <label className="label font-bold text-sm pb-1">Email:</label>
                   <input
                     type="email"
                     placeholder="Email"
-                    className="input input-bordered w-full bg-[#f3eddd]"
-                    {...register("email", { required: "Email is required" })}
+                    className="input input-bordered bg-[#f3eddd] w-full"
+                    {...register("user_email", {
+                      required: "Email is required",
+                    })}
                   />
-                </label>
-                {errors.email && (
-                  <p className="text-red-500">{errors.email.message}</p>
-                )}
-                <label className="form-control w-full max-w-xs">
-                  <span className="label-text font-bold text-[14px] pb-2">
-                    Phone:
-                  </span>
+                  {errors.user_email && (
+                    <p className="text-red-500 text-sm">
+                      {errors.user_email.message}
+                    </p>
+                  )}
+                </div>
+
+                <div className="w-full">
+                  <label className="label font-bold text-sm pb-1">Phone:</label>
                   <input
                     type="text"
                     placeholder="Phone number"
-                    className="input input-bordered w-full bg-[#f3eddd]"
+                    className="input input-bordered bg-[#f3eddd] w-full"
                     {...register("phone", {
                       required: "Phone number is required",
                     })}
                   />
-                </label>
+                  {errors.phone && (
+                    <p className="text-red-500 text-sm">
+                      {errors.phone.message}
+                    </p>
+                  )}
+                </div>
               </div>
 
-              <label className="form-control w-full max-w-xs">
-                <span className="label-text font-bold text-[14px] pb-2">
-                  Address:
-                </span>
+              {/* Address & Additional Note */}
+              <div className="pb-4">
+                <label className="label font-bold text-sm pb-1">Address:</label>
                 <input
                   type="text"
                   placeholder="Address"
-                  className="input input-bordered w-full bg-[#f3eddd]"
+                  className="input input-bordered bg-[#f3eddd] w-full"
                   {...register("address", {
                     required: "Address is required",
                   })}
                 />
-              </label>
-              {errors.address && (
-                <p className="text-red-500">{errors.address.message}</p>
-              )}
-              <label className="form-control w-full max-w-xs pt-4">
-                <span className="label-text font-bold text-[14px] pb-2">
+                {errors.address && (
+                  <p className="text-red-500 text-sm">
+                    {errors.address.message}
+                  </p>
+                )}
+              </div>
+              <div className="pb-4">
+                <label className="label font-bold text-sm pb-1">
                   Additional Note:
-                </span>
+                </label>
                 <textarea
                   placeholder="Additional note (if any)"
-                  className="textarea textarea-bordered w-full bg-[#f3eddd]"
+                  className="textarea textarea-bordered bg-[#f3eddd] w-full"
                   {...register("additionalNote")}
                 ></textarea>
-              </label>
-
-              {errors.phone && (
-                <p className="text-red-500">{errors.phone.message}</p>
-              )}
-
-              <div className="mt-6">
-                <button className="btn bg-gradient-to-r text-white from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] w-full">
-                  Submit
-                </button>
               </div>
+
+              {/* Submit Button */}
+              <button
+                type="submit"
+                disabled={isLoading}
+                className={`btn w-full ${
+                  isLoading
+                    ? "bg-gray-400 cursor-not-allowed"
+                    : "bg-gradient-to-r from-[#e0584c] to-[#FD3B29] text-white"
+                }`}
+              >
+                {isLoading ? "Submitting..." : "Submit"}
+              </button>
             </form>
           </div>
         </div>
