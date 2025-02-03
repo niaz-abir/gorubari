@@ -5,9 +5,9 @@ import emailjs from "@emailjs/browser";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type TInput = {
-  user_name: string;
   user_email: string;
-  user_message: string;
+  phone: string;
+  additionalNote: string;
 };
 
 const ContactUs = () => {
@@ -20,7 +20,7 @@ const ContactUs = () => {
   const form = useRef<HTMLFormElement>(null);
 
   const onSubmit: SubmitHandler<TInput> = (data) => {
-    // console.log(data);
+    console.log(data);
     if (form.current) {
       emailjs
         .sendForm("servicegraphitech", "template_ulg1uq6", form.current, {
@@ -165,27 +165,6 @@ const ContactUs = () => {
                   <form ref={form} onSubmit={handleSubmit(onSubmit)}>
                     <label className="form-control w-full max-w-xs">
                       <div className="label">
-                        <span className="text-black">Name:</span>
-                      </div>
-                      <input
-                        type="text"
-                        placeholder="name"
-                        className={`input input-bordered bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
-                          errors.user_name ? "border-red-500" : ""
-                        }`}
-                        {...register("user_name", {
-                          required: "Name is required",
-                        })}
-                      />
-                    </label>
-                    {errors.user_name && (
-                      <p className="text-red-500 text-sm">
-                        {errors.user_name.message}
-                      </p>
-                    )}
-
-                    <label className="form-control w-full max-w-xs">
-                      <div className="label">
                         <span className="text-black">Email:</span>
                       </div>
                       <input
@@ -205,23 +184,45 @@ const ContactUs = () => {
                         {errors.user_email.message}
                       </p>
                     )}
+                    <label className="form-control w-full max-w-xs">
+                      <div className="label">
+                        <span className="text-black">Phone:</span>
+                      </div>
+                      <input
+                        required
+                        type="text"
+                        placeholder="phone"
+                        className={`input input-bordered bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
+                          errors.phone ? "border-red-500" : ""
+                        }`}
+                        {...register("phone", {
+                          required: "phone is required",
+                        })}
+                      />
+                    </label>
+                    {errors.phone && (
+                      <p className="text-red-500 text-sm">
+                        {errors.phone.message}
+                      </p>
+                    )}
+
                     <label className="form-control">
                       <div className="label">
                         <span className="text-black ">Message:</span>
                       </div>
                       <textarea
                         className={` textarea textarea-bordered h-24  bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
-                          errors.user_message ? "border-red-500" : ""
+                          errors.additionalNote ? "border-red-500" : ""
                         }`}
-                        {...register("user_message", {
+                        {...register("additionalNote", {
                           required: "message is required",
                         })}
                         placeholder="message"
                       ></textarea>
                     </label>
-                    {errors.user_message && (
+                    {errors.additionalNote && (
                       <p className="text-red-500 text-sm">
-                        {errors.user_message.message}
+                        {errors.additionalNote.message}
                       </p>
                     )}
 

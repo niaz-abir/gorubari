@@ -68,7 +68,7 @@ const Order = () => {
           "B9eRXvIMGw4yENXED"
         );
         reset();
-        alert("Order placed successfully!");
+        alert("Order requirements submitted!");
       }
     } catch (error) {
       console.error("Error submitting the form:", error);
@@ -235,12 +235,14 @@ const Order = () => {
               </div>
               <div className="pb-4">
                 <label className="label font-bold text-sm pb-1">
-                  Additional Note:
+                  Order Requirements:
                 </label>
                 <textarea
-                  placeholder="Additional note (if any)"
+                  placeholder="Requirements "
                   className="textarea textarea-bordered bg-[#f3eddd] w-full"
-                  {...register("additionalNote")}
+                  {...register("additionalNote", {
+                    required: "Requirements is required",
+                  })}
                 ></textarea>
               </div>
 

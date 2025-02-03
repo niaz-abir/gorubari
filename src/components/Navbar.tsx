@@ -40,7 +40,11 @@ const Navbar = () => {
             <GiBee size={35} />
             <Link href="/">Clothings Bee</Link>
           </h1> */}
-          <Image src={image3} alt="" height={40} width={200} />
+          <Link href="/">
+            {" "}
+            <Image src={image3} alt="" height={40} width={200} />
+          </Link>
+
           {/* <img src={image3} alt=""/> */}
           <button
             onClick={toggleMenu}
@@ -59,7 +63,7 @@ const Navbar = () => {
             } w-full md:block md:w-auto`}
             id="navbar-default"
           >
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-black dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 text-black  ">
               <li>
                 <Link
                   href="about-us"
