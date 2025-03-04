@@ -48,10 +48,13 @@ const Footer = () => {
         </nav>
         <nav>
           <h6 className="font-semibold text-[16px]">Address</h6>
-          <p className="text-[20px]"> E13 9BL, Fawn road,</p>
-          <p className="text-[20px]"> Upton park, London, United Kingdoom.</p>
+          <p className="text-[20px]"> 2510 164th St Apt F207,</p>
+          <p className="text-[20px]">
+            {" "}
+            Lynnwood, Washington 98087, United States.
+          </p>
           <h6 className="font-semibold text-[16px] pt-2">Number:</h6>
-          <p className="text-[20px]">+44 7459 449187 </p>
+          <p className="text-[20px]">(716) 406 7972 </p>
         </nav>
       </footer>
       <div className="flex justify-between p-2 mt-4">

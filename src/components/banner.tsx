@@ -7,9 +7,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Import your images
-import image1 from "../../public/images/carosuel (5).jpg";
-import image2 from "../../public/images/carosuel (6).jpg";
-import image3 from "../../public/images/carosuel (4).jpg";
+import image1 from "../../public/images/newcarosuel (2).jpg";
+import image2 from "../../public/images/newcarosuel (3).jpg";
+import image3 from "../../public/images/newcarosuel (4).jpg";
+import image4 from "../../public/images/newcarosuel (5).jpg";
+import image5 from "../../public/images/newcarosuel (1).jpg";
 
 export function Banner() {
   return (
@@ -21,7 +23,7 @@ export function Banner() {
           </h1>
           <p className="max-w-[35rem] text-lg leading-relaxed text-foreground-500">
             <span className="font-bold">Clothings Bee </span>
-            is a UK-based custom clothing business with 7 years of experience.
+            is a US-based custom clothing business with 7 years of experience.
             We specialize in bulk orders of high-quality custom T-shirts,
             hoodies, caps, and beanies, tailored to your brand’s needs.
           </p>
@@ -64,6 +66,24 @@ export function Banner() {
             <SwiperSlide>
               <Image
                 src={image3}
+                alt="Hero 3"
+                className="rounded-md"
+                height={600}
+                width={600}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={image4}
+                alt="Hero 3"
+                className="rounded-md"
+                height={600}
+                width={600}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
+                src={image5}
                 alt="Hero 3"
                 className="rounded-md"
                 height={600}

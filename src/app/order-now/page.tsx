@@ -5,8 +5,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm, SubmitHandler } from "react-hook-form";
 import Image from "next/image";
-import image1 from "../../../public/images/capprice.jpg";
-import image2 from "../../../public/images/tshirtprice.jpg";
+import image1 from "../../../public/images/neworder (1).jpg";
+import image2 from "../../../public/images/neworder (2).jpg";
 
 interface TInput {
   user_email: string;
