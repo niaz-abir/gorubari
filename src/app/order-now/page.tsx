@@ -88,8 +88,11 @@ const Order = () => {
           <div className="text-center pb-4 -mt-4">
             <h1 className="text-4xl font-bold pt-4 pb-3">Order Process</h1>
             <p className="text-black pb-2">
-              Please select the options and fill out the form below to place
-              your order.
+              Please check the prices below before submitting your request.
+              After you fill out the form, we’ll review your details and provide
+              a mockup and final quote based on your requirements. Upload your
+              logo or artwork and share any design preferences in the "Order
+              Requirements" section. We’ll get back to you soon!
             </p>
           </div>
           <div className="flex justify-center">
