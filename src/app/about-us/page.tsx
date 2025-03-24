@@ -1,82 +1,139 @@
-/* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
-
 import Link from "next/link";
-import { MdOutlineWavingHand } from "react-icons/md";
-const AboutUs = () => {
+
+const About = () => {
   return (
-    <section className=" pb-14 ml-4 mr-4  mt-6">
-      <h1 className="font-bold text-5xl pl-4 ml-4 lg:pl-0 pb-6">About us</h1>
+    <>
+      <section className="block lg:hidden">
+        <div className="grid grid-cols-1 pt-44 lg:pt-16 all-About lg:grid-cols-2 font-Raleway">
+          <div>
+            <h1 className="mx-auto mt-10 text-4xl font-bold text-center text-white lg:text-5xl">
+              Join Us And Explore <br /> Thousands Of{" "}
+              <span className="text-colour">
+                Super <br /> Jobs
+              </span>
+            </h1>
+            <div className="flex justify-center gap-8 pt-12 pl-6 text-white lg:pl-14">
+              <div>
+                <h1 className="text-3xl font-bold">10K</h1>
+                <p>active job seekers</p>
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold">7k</h1>
+                <p>active job seekers</p>
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold">25+</h1>
+                <p>active job seekers</p>
+              </div>
+            </div>
+            <div className="flex justify-center gap-4 pt-6 ">
+              <Link
+                href="/buildresume"
+                className="px-6 py-4 mr-4 font-bold btn-all"
+              >
+                Get Started
+              </Link>
+              <button className="px-6 py-4 font-bold btn-all">About us</button>
+            </div>
+          </div>
 
-      <div>
-        <p className="lg:text-[1.25rem] text-[1rem] p-4 leading-relaxed text-foreground/80">
-          At <span className="font-bold">Clothings Bee</span> we redefine
-          clothing retail by combining creativity, craftsmanship, and customer
-          focus to deliver apparel that resonates with your style and
-          personality. Founded on the principles of quality and innovation, we
-          offer a curated selection of caps and t-shirts designed to meet your
-          everyday and unique needs. Our team of passionate designers and
-          professionals is dedicate to crafting clothing that not only looks
-          great but feels exceptional. Whether you seek custom designs or
-          premium ready-to-wear pieces, we aim to elevate your wardrobe and
-          reflect your individuality.
-        </p>
-        <p className="lg:text-[1.25rem] text-[1rem]  p-4 leading-relaxed text-foreground/80">
-          From exceptional materials to a seamless shopping experience, we are
-          committed to ensuring your satisfaction every step of the way. At
-          Clothings Bee, fashion meets function, helping you make a statement
-          with every piece you wear.
-        </p>
-      </div>
-
-      <div className="max-w-7xl p-8 mt-14 mx-auto rounded-sm bg-gradient-to-r from-[#e0584c] to-[#FD3B29] ">
-        <h1 className="pt-4 font-bold pb-4 text-3xl text-white">
-          Meet Our Team
-        </h1>
-        <p className="pb-4">
-          Meet the passionate individuals behind Clothings Bee! Our team is a
-          vibrant mix of creative designers, skilled artisans, and dedicated
-          professionals who bring their expertise to every piece of apparel we
-          craft. Driven by innovation and a love for fashion, we collaborate to
-          ensure each product reflects our commitment to quality and style. From
-          designing unique collections to delivering exceptional customer
-          experiences, our team works together to make your style vision a
-          reality. Get to know the faces shaping the future of Clothings Bee
-        </p>
-
-        <button className="w-28 h-14 text-black bg-gradient-to-r from-[#b6ae98] to-[#f3eddd] hover:bg-[#132836] border-none rounded-md text-[18px]  font-bold transition-all duration-300">
-          Lets Talk
-        </button>
-      </div>
-
-      <div className="flex flex-col p-4 lg:flex-row gap-4 items-center mt-24">
-        <div className="shadow-xl shadow-[#23131c] px-6 py-10 border-l-2 border-gray-600">
-          <h1 className="font-bold text-2xl pb-4  ">Our Goal</h1>
-          <p>
-            Our goal is to redefine your style with premium-quality apparel that
-            blends comfort, durability, and fashion. We are committed to
-            delivering products tailored to your unique preferences, ensuring
-            that you look and feel your best. By focusing on exceptional
-            craftsmanship and customer satisfaction, we aim to create lasting
-            impressions and build a community that values individuality and
-            quality.
-          </p>
+          <div className="pt-6">
+            <img
+              className="w-full rounded-md h-3/4"
+              src="https://images.unsplash.com/photo-1576085898323-218337e3e43c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            ></img>
+          </div>
         </div>
-        <div className="shadow-xl shadow-[#23131c] px-6 py-10 border-l-2 border-gray-500">
-          <h1 className="font-bold text-2xl pb-4">Our Mission</h1>
-          <p>
-            Our mission is to inspire confidence and self-expression through
-            stylish, high-quality clothing. We strive to provide personalized
-            designs and exceptional service that meet your needs and exceed your
-            expectations. With a focus on sustainability and innovation, we are
-            dedicated to shaping a future where fashion is accessible,
-            responsible, and empowering for everyone.
-          </p>
+      </section>
+
+      <section className="hidden max-w-6xl pb-12 mx-auto mt-8 shadow-xl lg:block shadow-dark-new ">
+        <div className="flex items-center gap-8">
+          <h1 className="text-[80px] font-bold text-accent-400">HIRE NOW </h1>
+          <div className="flex flex-col items-center justify-center">
+            <div className="flex p-2 -space-x-4 rounded-md bg-dark-300">
+              <img
+                alt=""
+                className="object-cover object-center w-20 h-20 border rounded-full dark:bg-gray-500 dark:border-gray-300"
+                src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              />
+              <img
+                alt=""
+                className="object-cover object-center w-20 h-20 border rounded-full dark:bg-gray-500 dark:border-gray-300"
+                src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              />
+              <img
+                alt=""
+                className="object-cover object-center w-20 h-20 border rounded-full dark:bg-gray-500 dark:border-gray-300"
+                src="https://plus.unsplash.com/premium_photo-1675129779582-d84b954f2397?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              />
+              <img
+                alt=""
+                className="object-cover object-center w-20 h-20 border rounded-full dark:bg-gray-500 dark:border-gray-300"
+                src="https://images.unsplash.com/photo-1605462863863-10d9e47e15ee?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              />
+              <span className="flex items-center justify-center w-20 h-20 font-semibold border rounded-full dark:bg-gray-50 dark:text-gray-800 dark:border-gray-300">
+                +3
+              </span>
+            </div>
+          </div>
+          <div className="p-4 rounded-md shadow-2xl bg-dark-300 shadow-dark-new">
+            <h2>
+              Success try to make you great result<br></br> if you want you can
+              do it easily<br></br>
+              Job try to make you great result<br></br> lot of option in your
+              hand do it.<br></br>
+              No way make you great result try <br></br> do hard and earn your
+              result here<br></br>A great story try to make you great
+              <br></br> and hope you can make it
+            </h2>
+            {/* <h1 className="text-[40px]">
+            Success Try<br></br> To Your Make<br></br> History
+          </h1> */}
+          </div>
         </div>
-      </div>
-    </section>
+        <div>
+          <h1 className="text-[75px] font-bold">WITH COMPLETE CONFIDENCE!</h1>
+        </div>
+
+        {/* chart section */}
+        <div className="flex gap-8 pt-6">
+          <div className="p-4 text-white rounded-md bg-dark-300">
+            <div className="flex gap-8 pt-4 pl-4">
+              <div>
+                <h1 className="text-3xl font-bold">10K+</h1>
+                <p className="font-bold"> Job seekers</p>
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold">7k+</h1>
+                <p className="font-bold">Learning</p>
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold">25k+</h1>
+                <p className="font-bold">Community Member</p>
+              </div>
+            </div>
+
+            <div className="pt-6">
+              <h2 className="text-[30px] font-bold">
+                We aspire to elevate your skills
+              </h2>
+
+              <button className="w-[220px] rounded-md px-6 py-4 font-bold text-white mr-4 mt-6 btn-all">
+                Explore Us
+              </button>
+            </div>
+          </div>
+
+          <div>
+            <h1>man</h1>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
-export default AboutUs;
+export default About;
