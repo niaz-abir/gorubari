@@ -1,4 +1,6 @@
 import Footer from "@/components/Footer";
+import LatestProduct from "@/components/LatestProduct";
+import Member from "@/components/Member";
 
 import Testimonial from "@/components/Testimonial";
 import { Banner } from "@/components/banner";
@@ -9,9 +11,9 @@ export default function Home() {
   return (
     <section className="pl-0 lg:pl-6">
       <Banner />
-
       <Services />
-      <Testimonial />
+      <Member />
+      <LatestProduct />
       <ChooseUs />
       <Footer />
     </section>

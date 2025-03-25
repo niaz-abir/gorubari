@@ -19,13 +19,18 @@ export function Banner() {
       <div className="grid backdrop-blur-xl p-6 rounded-md grid-cols-1  mt-10 items-center justify-items-center md:grid-cols-2">
         <div className="flex flex-col items-center gap-y-5 text-center md:items-start md:text-start">
           <h1 className="text-[clamp(2rem,_4vw+1rem,_4rem)] font-extrabold capitalize leading-tight tracking-tight">
-            Premium Custom Apparel for Your Brand & Business.
+            Welcome to Gorubari!
           </h1>
+          <h2 className=" text-4xl font-semibold">
+            {" "}
+            A Taste of Tradition & Flavor
+          </h2>
           <p className="max-w-[35rem] text-lg leading-relaxed text-foreground-500">
-            <span className="font-bold">Clothings Bee </span>
-            is a US-based custom clothing business with 7 years of experience.
-            We specialize in bulk orders of high-quality custom T-shirts,
-            hoodies, caps, and beanies, tailored to your brand’s needs.
+            <span className="font-bold"> At Gorubari, </span>
+            we bring you the perfect fusion of authentic flavors, fresh
+            ingredients, and heartwarming hospitality. Our menu is crafted with
+            passion, offering a delightful selection of mouthwatering dishes
+            that satisfy every craving.
           </p>
           <div className="flex items-center gap-x-4 pt-4 pb-4">
             <Link

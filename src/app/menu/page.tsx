@@ -96,9 +96,36 @@ const Menu = () => {
   ];
   return (
     <div>
-      <h1 className="text-center font-bold mt-14 mb-14 text-5xl">
-        All menu here
-      </h1>
+      <div className="flex flex-col gap-4 justify-center items-center p-4 my-6 mt-16">
+        <h1 className="text-3xl text-black dark:text-white md:text-5xl lg:text-6xl font-bold">
+          Search your food
+        </h1>
+
+        <div className="relative p-3 border-[#1f2b2e] rounded-lg w-full max-w-lg">
+          <input
+            type="text"
+            className="rounded-md p-3 bg-[#1f2b2e]  w-full"
+            placeholder="Search MCQ | Topic | Course"
+          />
+
+          <button type="submit" className="absolute right-6 top-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              className="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 ml-4 gap-4 lg:ml-14">
         {/* {allFood?.map((food) => (

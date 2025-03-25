@@ -19,7 +19,7 @@ const ChooseUs = () => {
     },
     {
       id: 2,
-      name: "Custom Designs",
+      name: "Custom Order",
       icon: <MdDesignServices />,
       color: "#7E1891",
       text: "Bring your vision to life with our personalized cap and t-shirt designs, tailored to reflect your unique style or brand.",
@@ -49,9 +49,9 @@ const ChooseUs = () => {
   };
 
   return (
-    <section className="mt-16 mb-8 mr-0 lg:mr-8 rounded-sm bg-gradient-to-r from-[#e0584c] to-[#FD3B29] p-4">
+    <section className="mt-16 mb-8 mr-0 lg:mr-8 rounded-sm bg-gradient-to-r from-[#1f2b2e] to-[#213e46] p-4">
       <h1 className="font-bold text-center text-4xl pt-4">Why Choose us?</h1>
-      <p className=" pb-8 pt-2 text-black text-[18px] text-center">
+      <p className=" pb-8 pt-2 dark:text-white text-white text-[18px] text-center">
         We have lot of support form us .You can watch it and discuss with us.
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
@@ -62,7 +62,7 @@ const ChooseUs = () => {
             transition={{ duration: 0.7 }}
             viewport={{ once: true, amount: 0.3 }}
             key={choose?.id}
-            className="lg:w-96 m-6  p-6 rounded-md bg-[#e7dec7]/40   "
+            className="lg:w-96 m-6  p-6 rounded-md bg-[#1f2b2e]/40   "
           >
             <div className="backdrop-blur-xl p-4 rounded-sm   ">
               <motion.h1

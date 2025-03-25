@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import image from "../../../public/images/company1.jpg";
 
 const About = () => {
   return (
@@ -8,13 +10,13 @@ const About = () => {
       <section className="block lg:hidden">
         <div className="grid grid-cols-1 pt-44 lg:pt-16 all-About lg:grid-cols-2 font-Raleway">
           <div>
-            <h1 className="mx-auto mt-10 text-4xl font-bold text-center text-white lg:text-5xl">
+            <h1 className="mx-auto mt-10 text-4xl font-bold text-center text-black dark:text-white lg:text-5xl">
               Join Us And Explore <br /> Thousands Of{" "}
               <span className="text-colour">
                 Super <br /> Jobs
               </span>
             </h1>
-            <div className="flex justify-center gap-8 pt-12 pl-6 text-white lg:pl-14">
+            <div className="flex justify-center gap-8 pt-12 pl-6 text-black dark:text-white lg:pl-14">
               <div>
                 <h1 className="text-3xl font-bold">10K</h1>
                 <p>active job seekers</p>
@@ -100,7 +102,7 @@ const About = () => {
 
         {/* chart section */}
         <div className="flex gap-8 pt-6">
-          <div className="p-4 text-white rounded-md bg-dark-300">
+          <div className="p-4 text-black dark:text-white rounded-md bg-dark-300">
             <div className="flex gap-8 pt-4 pl-4">
               <div>
                 <h1 className="text-3xl font-bold">10K+</h1>
@@ -128,7 +130,13 @@ const About = () => {
           </div>
 
           <div>
-            <h1>man</h1>
+            <Image
+              className="rounded-sm"
+              src={image}
+              alt=""
+              height={500}
+              width={500}
+            ></Image>
           </div>
         </div>
       </section>

@@ -45,7 +45,7 @@ const ContactUs = () => {
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-4 lg:py-8">
         <div className="mb-4">
           <div className="mb-4 max-w-3xl text-center sm:text-center md:mx-auto ">
-            <h2 className="font-heading mb-4 font-bold tracking-tight text-black dark:text-black text-2xl lg:text-4xl">
+            <h2 className="font-heading mb-4 font-bold tracking-tight text-black dark:text-white text-2xl lg:text-4xl">
               Get in Touch
             </h2>
           </div>
@@ -53,7 +53,7 @@ const ContactUs = () => {
         <div className="flex items-stretch  justify-center">
           <div className="grid md:grid-cols-2 items-center mt-4 ">
             <div className="h-full p-4 lg:pr-6 mt-2 lg:mt-4 ">
-              <p className="mt-3 mb-12 text-lg text-black dark:text-slate-400">
+              <p className="mt-3 mb-12 text-lg text-black dark:text-white">
                 We’d love to hear from you! Whether you have questions,
                 feedback, or need support, our team is here to help. Fill out
                 the form below, or reach out to us via phone or email. Your
@@ -80,14 +80,14 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-black dark:text-black">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-black dark:text-white">
                       Our Address
                     </h3>
-                    <p className="text-black dark:text-slate-400">
+                    <p className="text-black dark:text-white">
                       E13 9BL, Fawn road,
                     </p>
-                    <p className="text-black dark:text-slate-400">
-                      Upton park, London, United Kingdoom.
+                    <p className="text-black dark:text-white">
+                      Upton park, Chittagong.
                     </p>
                   </div>
                 </li>
@@ -111,14 +111,14 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-black dark:text-black">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-black dark:text-white">
                       Contact
                     </h3>
-                    <p className="text-black dark:text-slate-400">
-                      Mobile: +44 7459 449187
+                    <p className="text-black dark:text-white">
+                      Mobile: 0182937483
                     </p>
-                    <p className="text-black dark:text-slate-400">
-                      Mail: clothingsbee.co.uk@gmail.com
+                    <p className="text-black dark:text-white">
+                      Mail: gorubarico.uk@gmail.com
                     </p>
                   </div>
                 </li>
@@ -141,10 +141,10 @@ const ContactUs = () => {
                     </svg>
                   </div>
                   <div className="ml-4 mb-4">
-                    <h3 className="mb-2 text-lg font-medium leading-6 text-black dark:text-black">
+                    <h3 className="mb-2 text-lg font-medium leading-6 text-black dark:text-white">
                       Working hours
                     </h3>
-                    <p className="text-black dark:text-slate-400">
+                    <p className="text-black dark:text-white">
                       Monday - Friday: 08:00am - 10:00pm
                     </p>
                   </div>
@@ -153,11 +153,11 @@ const ContactUs = () => {
             </div>
 
             <div>
-              <div className="text-black relative px-2 p-4  rounded-md shadow-lg sm:rounded-3xl ">
+              <div className="text-black dark:text-white relative px-2 p-4  rounded-md shadow-lg sm:rounded-3xl ">
                 <div className="text-center pb-4 -mt-4">
                   <h1 className="text-3xl font-bold pt-4">Contact Us!</h1>
 
-                  <p className="text-black">
+                  <p className="text-black dark:text-white">
                     Fill up the form below to send us a message.
                   </p>
                 </div>
@@ -165,13 +165,15 @@ const ContactUs = () => {
                   <form ref={form} onSubmit={handleSubmit(onSubmit)}>
                     <label className="form-control w-full max-w-xs">
                       <div className="label">
-                        <span className="text-black">Email:</span>
+                        <span className="text-black dark:text-white">
+                          Email:
+                        </span>
                       </div>
                       <input
                         required
                         type="text"
                         placeholder="email"
-                        className={`input input-bordered bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
+                        className={`input input-bordered dark:bg-[#1f2b2e] bg-[#f3eddd]  w-[350px]  lg:w-[450px] ${
                           errors.user_email ? "border-red-500" : ""
                         }`}
                         {...register("user_email", {
@@ -186,13 +188,15 @@ const ContactUs = () => {
                     )}
                     <label className="form-control w-full max-w-xs">
                       <div className="label">
-                        <span className="text-black">Phone:</span>
+                        <span className=" text-black dark:text-white">
+                          Phone:
+                        </span>
                       </div>
                       <input
                         required
                         type="text"
                         placeholder="phone"
-                        className={`input input-bordered bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
+                        className={`input input-bordered dark:bg-[#1f2b2e] bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
                           errors.phone ? "border-red-500" : ""
                         }`}
                         {...register("phone", {
@@ -208,10 +212,12 @@ const ContactUs = () => {
 
                     <label className="form-control">
                       <div className="label">
-                        <span className="text-black ">Message:</span>
+                        <span className="text-black dark:text-white">
+                          Message:
+                        </span>
                       </div>
                       <textarea
-                        className={` textarea textarea-bordered h-24  bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
+                        className={` textarea textarea-bordered h-24 dark:bg-[#1f2b2e]  bg-[#f3eddd] w-[350px]  lg:w-[450px] ${
                           errors.additionalNote ? "border-red-500" : ""
                         }`}
                         {...register("additionalNote", {

@@ -4,16 +4,18 @@ import React from "react";
 const Gallery = () => {
   return (
     <section className="mt-14">
-      <div className="pb-6 ml-8">
-        <h1 className="pb-2 text-3xl font-bold text-accent-400">
-          Recently Hiring Team
-        </h1>
-        <p className="text-gray-400 text-[18px]">
-          We want to try to make different in our team .Here are lot people{" "}
-        </p>
-        <p className="text-gray-400 text-[18px]">
-          do it we hope everyone can do it. Best wishes for you.
-        </p>
+      <div className="flex justify-center">
+        <div className="pb-6 ml-8">
+          <h1 className="pb-2 text-black dark:text-white text-3xl font-bold ">
+            Moment with our family
+          </h1>
+          <p className="text-black dark:text-white text-[18px]">
+            We want to try to make different in our team .Here are lot people{" "}
+          </p>
+          <p className="text-black dark:text-white text-[18px]">
+            do it we hope everyone can do it. Best wishes for you.
+          </p>
+        </div>
       </div>
       <div className="p-5 sm:p-8">
         <div className="columns-1 gap-5 sm:columns-2 sm:gap-8 md:columns-3 lg:columns-4 [&>img:not(:first-child)]:mt-8">

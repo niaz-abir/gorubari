@@ -19,9 +19,9 @@ const Footer = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
       viewport={{ once: true, amount: 0.3 }}
-      className="mt-24 pb-6  bg-[#f3eddd] shadow-md shadow-[#b1aa9c] border-t-2 "
+      className="mt-24 pb-6  bg-[#1f2b2e] shadow-md shadow-[#5f767c] border-t-2 "
     >
-      <footer className="footer text-black p-10">
+      <footer className="footer text-black dark:text-white p-10">
         <div>
           <h1 className="text-[25px] font-bold">"Discover New Horizons,</h1>
           <h1 className="text-[25px] font-bold">
@@ -35,31 +35,34 @@ const Footer = () => {
         </div>
 
         <nav className="font-semibold text-[16px]">
-          <h6 className="font-bold text-black text-[18px]">Services</h6>
-          <a className="link link-hover text-black">Cap</a>
-          <a className="link link-hover text-black">TShirt</a>
-          <a className="link link-hover text-black">Delivery</a>
-          <a className="link link-hover text-black">Discount</a>
+          <h6 className="font-bold text-black dark:text-white text-[18px]">
+            Services
+          </h6>
+          <a className="link link-hover text-black dark:text-white">menu</a>
+          <a className="link link-hover text-black dark:text-white">About</a>
+          <a className="link link-hover text-black dark:text-white">
+            Testimonial
+          </a>
+          <a className="link link-hover text-black dark:text-white">gallery</a>
         </nav>
         <nav className="font-semibold text-[16px] text-black">
-          <h6 className="font-bold text-black text-[18px]">Company</h6>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
+          <h6 className="font-bold text-black dark:text-white text-[18px]">
+            Company
+          </h6>
+          <a className="link link-hover text-black dark:text-white">About us</a>
+          <a className="link link-hover text-black dark:text-white">Contact</a>
         </nav>
         <nav>
           <h6 className="font-semibold text-[16px]">Address</h6>
           <p className="text-[20px]"> 2510 164th St Apt F207,</p>
-          <p className="text-[20px]">
-            {" "}
-            Lynnwood, Washington 98087, United States.
-          </p>
+          <p className="text-[20px]"> west khulsi,Chittagong</p>
           <h6 className="font-semibold text-[16px] pt-2">Number:</h6>
-          <p className="text-[20px]">(716) 406 7972 </p>
+          <p className="text-[20px]">0181939485</p>
         </nav>
       </footer>
       <div className="flex justify-between p-2 mt-4">
         <div>
-          <h4>Copyright©clothingsbee$2024 </h4>
+          <h4>Copyright©garubari$2024 </h4>
         </div>
         <div className="flex gap-2">
           <Link href="https://www.facebook.com/clothingsbeeuk/">

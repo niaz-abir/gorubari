@@ -13,27 +13,27 @@ const Services = () => {
   const allServices = [
     {
       id: 1,
-      name: "Custom Cap Design",
+      name: "Dine-In Experience ",
       no: "01",
       icon: <RiPaintBrushLine />,
       details:
-        "Create personalized caps that showcase your unique style. From trendy designs to brand logos, we bring your vision to life.",
+        "Enjoy a cozy and welcoming ambiance where you can indulge in our freshly prepared, authentic dishes. Whether it’s a casual meal or a special occasion, we provide an unforgettable dining experience with top-notch service.",
     },
     {
       id: 2,
-      name: "T-Shirt Printing",
+      name: "Online Ordering",
       no: "02",
-      icon: <RiTShirt2Line />,
+      icon: <RiPaintBrushLine />,
       details:
-        "Get high-quality t-shirts printed with your custom designs. Perfect for personal use, events, or promoting your brand.",
+        "Craving Gorubari at home? Order online and enjoy your favorite meals with quick and hassle-free takeout. Perfect for busy days or relaxed nights when you want restaurant-quality food at your doorstep",
     },
     {
       id: 3,
-      name: "Bulk Apparel Orders",
+      name: "Catering for Events",
       no: "03",
-      icon: <FiShoppingBag />,
+      icon: <RiPaintBrushLine />,
       details:
-        "Order caps and t-shirts in bulk with competitive pricing. Ideal for businesses, teams, or special events.",
+        "Hosting an event? Let Gorubari take care of the food! We offer customized catering services for parties, corporate events, and special gatherings, ensuring every guest enjoys a delicious experience.",
     },
   ];
 
@@ -43,17 +43,17 @@ const Services = () => {
         <h1 className="font-bold text-center text-4xl">
           Discover Our Services
         </h1>
-        <p className="text-[18px] text-black">
+        <p className="text-[18px] text-black dark:text-white">
           From crafting unique apparel to delivering exceptional customer
-          experiences, <br /> we provide solutions that drive your clothing
-          business forward.
+          experiences, <br /> we provide solutions that drive your food business
+          forward.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {allServices.map((service) => (
           <motion.div
             key={service.id}
-            className="bg-[#e7dec7] rounded-md p-4 lg:w-96 m-6"
+            className=" rounded-md p-4 lg:w-96 m-6  bg-[#1f2b2e]"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
