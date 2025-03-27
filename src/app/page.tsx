@@ -1,8 +1,6 @@
 import Footer from "@/components/Footer";
 import LatestProduct from "@/components/LatestProduct";
 import Member from "@/components/Member";
-
-import Testimonial from "@/components/Testimonial";
 import { Banner } from "@/components/banner";
 import ChooseUs from "@/components/chooseUs";
 import Services from "@/components/services";
