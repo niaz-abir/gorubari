@@ -120,7 +120,7 @@ const Menu = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 ml-4  gap-4 lg:ml-14">
+      <div className="grid grid-cols-1 lg:grid-cols-3 ml-8  gap-4 lg:ml-14">
         {/* {allFood?.map((food) => (
           <div key={food?.id}>
             <div className="w-full max-w-xs p-4 overflow-hidden rounded-lg ">
