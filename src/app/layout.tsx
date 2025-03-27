@@ -40,8 +40,8 @@ export default function RootLayout({
       <body
         className={`${exo.className} transition-all duration-300 ${
           isDarkMode
-            ? "bg-gradient-to-t from-[#000105] via-[#2c3e42] to-[#000b0f] text-white"
-            : "bg-gray-100 text-black"
+            ? "bg-gradient-to-t from-[#000105] via-[#561F37] to-[#000b0f] text-white"
+            : "bg-gradient-to-t from-[#9599a7] via-[#C3B59F] to-[#BABFD1] text-black"
         }`}
       >
         <div className="relative">

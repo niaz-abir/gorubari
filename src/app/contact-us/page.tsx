@@ -21,23 +21,6 @@ const ContactUs = () => {
 
   const onSubmit: SubmitHandler<TInput> = (data) => {
     console.log(data);
-    if (form.current) {
-      emailjs
-        .sendForm("servicegraphitech", "template_ulg1uq6", form.current, {
-          publicKey: "B9eRXvIMGw4yENXED",
-        })
-        .then(
-          () => {
-            console.log("SUCCESS!");
-            reset();
-          },
-          (error: { text: any }) => {
-            console.log("FAILED...", error.text);
-          }
-        );
-    } else {
-      console.log("Form reference is null.");
-    }
   };
 
   return (
@@ -153,7 +136,7 @@ const ContactUs = () => {
             </div>
 
             <div>
-              <div className="text-black dark:text-white relative px-2 p-4  rounded-md shadow-lg sm:rounded-3xl ">
+              <div className="text-black dark:text-white relative px-2 p-4  rounded-md shadow-xl sm:rounded-3xl ">
                 <div className="text-center pb-4 -mt-4">
                   <h1 className="text-3xl font-bold pt-4">Contact Us!</h1>
 

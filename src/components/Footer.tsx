@@ -19,7 +19,7 @@ const Footer = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
       viewport={{ once: true, amount: 0.3 }}
-      className="mt-24 pb-6  bg-[#1f2b2e] shadow-md shadow-[#5f767c] border-t-2 "
+      className="mt-24 pb-6  shadow-md bg-[#9599a7] dark:bg-gradient-to-r from-[#341321] to-[#000b0f]  shadow-[#5f767c] "
     >
       <footer className="footer text-black dark:text-white p-10">
         <div>

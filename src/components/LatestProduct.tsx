@@ -17,9 +17,12 @@ import Image from "next/image";
 const LatestProduct = () => {
   return (
     <div className="mt-8 mb-8">
-      <h1 className="text-center font-primary text-secondary-500 mt-14 mb-8 text-[2rem] font-bold">
+      <h1 className="text-center font-primary text-secondary-500 mt-24 mb-2 text-[2rem] font-bold">
         Our Latest product
       </h1>
+      <p className="mb-14 mt-2 text-[18px] text-center">
+        Explore our latest product—designed to meet your needs.
+      </p>
       <div className="mb-14 mt-14">
         <Marquee>
           <div>

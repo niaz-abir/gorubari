@@ -9,9 +9,8 @@ import Link from "next/link";
 // Import your images
 import image1 from "../../public/images/gorucaro (1).jpg";
 import image2 from "../../public/images/gorucaro (2).jpg";
-import image3 from "../../public/images/gorucaro (1).jpg";
-import image4 from "../../public/images/gorucaro (2).jpg";
-import image5 from "../../public/images/gorucaro (1).jpg";
+import image3 from "../../public/images/gorucaro (3).jpg";
+import image4 from "../../public/images/gorucaro (4).jpg";
 
 export function Banner() {
   return (
@@ -34,14 +33,14 @@ export function Banner() {
           </p>
           <div className="flex items-center gap-x-4 pt-4 pb-4">
             <Link
-              href="order-now"
+              href=""
               className="w-32 h-12 pl-2 pt-3 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300"
             >
               Get Quote
             </Link>
           </div>
         </div>
-        <div className="ml-0 lg:ml-6 w-full">
+        <div className="ml-0 mt-4 lg:ml-6 w-full">
           <Swiper
             modules={[Pagination, Autoplay]}
             pagination={{ clickable: true }}
@@ -88,7 +87,7 @@ export function Banner() {
             </SwiperSlide>
             <SwiperSlide>
               <Image
-                src={image5}
+                src={image2}
                 alt="Hero 3"
                 className="rounded-md"
                 height={600}

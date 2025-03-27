@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <section className="block lg:hidden">
-        <div className="grid grid-cols-1 pt-44 lg:pt-16 all-About lg:grid-cols-2 font-Raleway">
+        <div className="grid grid-cols-1 pt-24  lg:pt-16 all-About lg:grid-cols-2 font-Raleway">
           <div>
             <h1 className="mx-auto mt-10 text-4xl font-bold text-center text-black dark:text-white lg:text-5xl">
               Join Us And Explore <br /> Thousands Of{" "}
@@ -18,26 +18,25 @@ const About = () => {
             </h1>
             <div className="flex justify-center gap-8 pt-12 pl-6 text-black dark:text-white lg:pl-14">
               <div>
-                <h1 className="text-3xl font-bold">10K</h1>
-                <p>active job seekers</p>
+                <h1 className="text-3xl font-bold">100+</h1>
+                <p>Food Menu</p>
               </div>
               <div>
-                <h1 className="text-3xl font-bold">7k</h1>
-                <p>active job seekers</p>
+                <h1 className="text-3xl font-bold">40+</h1>
+                <p>Staff</p>
               </div>
               <div>
-                <h1 className="text-3xl font-bold">25+</h1>
+                <h1 className="text-3xl font-bold">25k+</h1>
                 <p>active job seekers</p>
               </div>
             </div>
-            <div className="flex justify-center gap-4 pt-6 ">
+            <div className="flex ml-24  items-center gap-x-4 pt-4 pb-4">
               <Link
-                href="/buildresume"
-                className="px-6 py-4 mr-4 font-bold btn-all"
+                href="order-now"
+                className="w-32 h-12 pl-2 pt-3 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300"
               >
-                Get Started
+                Explore us
               </Link>
-              <button className="px-6 py-4 font-bold btn-all">About us</button>
             </div>
           </div>
 
@@ -51,9 +50,11 @@ const About = () => {
         </div>
       </section>
 
-      <section className="hidden max-w-6xl pb-12 mx-auto mt-8 shadow-xl lg:block shadow-dark-new ">
+      <section className="hidden max-w-6xl  pb-12 mx-auto mt-8 shadow-xl lg:block shadow-dark-new ">
         <div className="flex items-center gap-8">
-          <h1 className="text-[80px] font-bold text-accent-400">HIRE NOW </h1>
+          <h1 className="text-[70px] font-bold pl-2 text-accent-400">
+            MEET NOW{" "}
+          </h1>
           <div className="flex flex-col items-center justify-center">
             <div className="flex p-2 -space-x-4 rounded-md bg-dark-300">
               <img
@@ -97,20 +98,22 @@ const About = () => {
           </div>
         </div>
         <div>
-          <h1 className="text-[75px] font-bold">WITH COMPLETE CONFIDENCE!</h1>
+          <h1 className="text-[75px] pl-2 font-bold">
+            Be a part of our family today!
+          </h1>
         </div>
 
         {/* chart section */}
-        <div className="flex gap-8 pt-6">
+        <div className="flex flex-col lg:flex-row gap-8 pt-2 lg:pt-6">
           <div className="p-4 text-black dark:text-white rounded-md bg-dark-300">
             <div className="flex gap-8 pt-4 pl-4">
               <div>
-                <h1 className="text-3xl font-bold">10K+</h1>
-                <p className="font-bold"> Job seekers</p>
+                <h1 className="text-3xl font-bold">100+</h1>
+                <p className="font-bold"> Food Menu</p>
               </div>
               <div>
-                <h1 className="text-3xl font-bold">7k+</h1>
-                <p className="font-bold">Learning</p>
+                <h1 className="text-3xl font-bold">40+</h1>
+                <p className="font-bold">Staff</p>
               </div>
               <div>
                 <h1 className="text-3xl font-bold">25k+</h1>
@@ -120,24 +123,48 @@ const About = () => {
 
             <div className="pt-6">
               <h2 className="text-[30px] font-bold">
-                We aspire to elevate your skills
+                We aspire to elevate your Order
               </h2>
+              <p>
+                way make you great result try do hard and earn your result here{" "}
+                <br></br>A great story try to make you great and hope you can
+                make it
+              </p>
 
-              <button className="w-[220px] rounded-md px-6 py-4 font-bold text-white mr-4 mt-6 btn-all">
-                Explore Us
-              </button>
+              <div className="flex items-center gap-x-4 pt-4 pb-4">
+                <Link
+                  href="order-now"
+                  className="w-32 h-12 pl-2 pt-3 bg-gradient-to-r from-[#e0584c] to-[#FD3B29] hover:bg-[#132836] border-none rounded-md text-[18px] text-white font-bold transition-all duration-300"
+                >
+                  Explore us
+                </Link>
+              </div>
             </div>
           </div>
 
           <div>
             <Image
-              className="rounded-sm"
+              className="rounded-sm p-4"
               src={image}
               alt=""
               height={500}
               width={500}
             ></Image>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className=" dark:text-white text-black p-4 block text-[18px] mt-6 lg:mt-14">
+          In Gorubari Restaurant, where tradition meets taste! We take pride in
+          serving authentic, flavorful dishes that bring the warmth of
+          home-cooked meals to your table. Our journey began with a passion for
+          rich, hearty flavors and a commitment to quality ingredients. At
+          Gorubari, every dish is crafted with care, blending traditional
+          recipes with a modern touch. Whether you are here for a family
+          gathering or a casual meal, we promise a dining experience that feels
+          both familiar and exciting. Join us and savor the true essence of
+          great food, great company, and unforgettable moments!
         </div>
       </section>
     </>

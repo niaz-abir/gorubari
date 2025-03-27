@@ -53,7 +53,7 @@ const Services = () => {
         {allServices.map((service) => (
           <motion.div
             key={service.id}
-            className=" rounded-md p-4 lg:w-96 m-6  bg-[#1f2b2e]"
+            className=" rounded-md p-4 lg:w-96 m-6 bg-[#9599a7] dark:bg-gradient-to-r from-[#341321] to-[#000b0f]  "
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}

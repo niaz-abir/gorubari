@@ -6,7 +6,7 @@ const Gallery = () => {
     <section className="mt-14">
       <div className="flex justify-center">
         <div className="pb-6 ml-8">
-          <h1 className="pb-2 text-black dark:text-white text-3xl font-bold ">
+          <h1 className="pb-2 text-black dark:text-white text-4xl font-bold ">
             Moment with our family
           </h1>
           <p className="text-black dark:text-white text-[18px]">
