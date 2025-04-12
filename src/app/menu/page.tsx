@@ -94,7 +94,7 @@ const Menu = () => {
           Search your food
         </h1>
 
-        <div className="relative p-3 border-[#1f2b2e] rounded-lg w-full max-w-lg">
+        <div className="relative p-4 border-[#1f2b2e] rounded-lg w-full max-w-lg">
           <input
             type="text"
             className="rounded-md p-3 dark:bg-[#1f2b2e]  w-full"
